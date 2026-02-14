@@ -1,18 +1,19 @@
 name: "command-a-03-2025"
-display_name: "Command A 03-2025"
-family: "command"
+display_name: "Command A"
+family: "command-a"
 status: "stable"
 
 cost:
-  input_per_1k: 0.0015
-  output_per_1k: 0.002
+  input_per_1k: 0.0025
+  output_per_1k: 0.01
 
 limits:
-  max_tokens: 4096
-  max_completion_tokens: 4096
+  max_tokens: 256000
+  max_completion_tokens: 8000
 
 capabilities:
   - chat
+  - function_calling
 
 modalities:
   input: ["text"]

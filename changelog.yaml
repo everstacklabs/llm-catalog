@@ -1,4 +1,50 @@
 versions:
+  - version: "2.2.0"
+    date: "2026-02-14"
+    description: "Expand Cohere catalog with Command R family, Command A Vision/Translate, Embed v4, and Rerank v3.5"
+    changes:
+      new_models:
+        - provider: cohere
+          model: command-a-vision-07-2025
+          display_name: "Command A Vision"
+        - provider: cohere
+          model: command-a-translate-08-2025
+          display_name: "Command A Translate"
+        - provider: cohere
+          model: command-r-plus-08-2024
+          display_name: "Command R+"
+        - provider: cohere
+          model: command-r-08-2024
+          display_name: "Command R"
+        - provider: cohere
+          model: command-r7b-12-2024
+          display_name: "Command R 7B"
+        - provider: cohere
+          model: embed-v4.0
+          display_name: "Embed v4"
+        - provider: cohere
+          model: embed-english-light-v3.0
+          display_name: "Embed English Light v3"
+        - provider: cohere
+          model: embed-multilingual-light-v3.0
+          display_name: "Embed Multilingual Light v3"
+        - provider: cohere
+          model: rerank-v3.5
+          display_name: "Rerank v3.5"
+      new_providers: []
+      updated_models:
+        - provider: cohere
+          model: command-a-03-2025
+          description: "Fixed pricing, context window (256K), added function_calling"
+        - provider: cohere
+          model: command-a-reasoning-08-2025
+          description: "Fixed pricing, context window (256K), max output (32K), added reasoning capability"
+      deprecated_models:
+        - provider: cohere
+          model: command-light
+          description: "Deprecated by Cohere as of September 2025"
+      pricing_changes: []
+
   - version: "2.1.0"
     date: "2026-02-13"
     description: "Add latest OpenAI models (GPT-4.1, o-series, Codex) and Anthropic models (Opus 4.6, Opus 4.5, Sonnet 4.5, Haiku 4.5)"

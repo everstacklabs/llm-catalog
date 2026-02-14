@@ -1,7 +1,7 @@
 name: "command-light"
 display_name: "Command Light"
 family: "command"
-status: "stable"
+status: "deprecated"
 
 cost:
   input_per_1k: 0.0003

@@ -1,5 +1,5 @@
-name: "command-a-reasoning-08-2025"
-display_name: "Command A Reasoning"
+name: "command-a-vision-07-2025"
+display_name: "Command A Vision"
 family: "command-a"
 status: "stable"
 
@@ -8,15 +8,14 @@ cost:
   output_per_1k: 0.01
 
 limits:
-  max_tokens: 256000
-  max_completion_tokens: 32000
+  max_tokens: 128000
+  max_completion_tokens: 8000
 
 capabilities:
   - chat
   - function_calling
-  - reasoning
+  - vision
 
 modalities:
-  input: ["text"]
+  input: ["text", "image"]
   output: ["text"]
-

@@ -3,7 +3,7 @@
 # Run: ./scripts/generate-manifest.sh to regenerate
 
 version: "2.1.2"
-generated_at: "2026-02-14T12:20:06Z"
+generated_at: "2026-02-14T12:37:37Z"
 schema_version: "1.0"
 
 providers:
@@ -42,9 +42,18 @@ providers:
     models:
       - providers/cohere/models/command-a-03-2025.yaml
       - providers/cohere/models/command-a-reasoning-08-2025.yaml
+      - providers/cohere/models/command-a-translate-08-2025.yaml
+      - providers/cohere/models/command-a-vision-07-2025.yaml
       - providers/cohere/models/command-light.yaml
+      - providers/cohere/models/command-r-08-2024.yaml
+      - providers/cohere/models/command-r-plus-08-2024.yaml
+      - providers/cohere/models/command-r7b-12-2024.yaml
+      - providers/cohere/models/embed-english-light-v3.0.yaml
       - providers/cohere/models/embed-english-v3.0.yaml
+      - providers/cohere/models/embed-multilingual-light-v3.0.yaml
       - providers/cohere/models/embed-multilingual-v3.0.yaml
+      - providers/cohere/models/embed-v4.0.yaml
+      - providers/cohere/models/rerank-v3.5.yaml
 
   - name: google
     files:
@@ -133,6 +142,6 @@ providers:
 # Statistics
 stats:
   total_providers: 8
-  total_models: 66
+  total_models: 75
   static_providers: 5
   meta_providers: 3
