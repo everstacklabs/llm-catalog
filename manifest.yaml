@@ -2,8 +2,8 @@
 # Auto-generated - DO NOT EDIT MANUALLY
 # Run: ./scripts/generate-manifest.sh to regenerate
 
-version: "2.1.1"
-generated_at: "2026-02-14T12:12:56Z"
+version: "2.1.2"
+generated_at: "2026-02-14T12:20:06Z"
 schema_version: "1.0"
 
 providers:
@@ -23,11 +23,15 @@ providers:
       - providers/anthropic/models/claude-3-haiku-20240307.yaml
       - providers/anthropic/models/claude-3-opus-20240229.yaml
       - providers/anthropic/models/claude-3-sonnet-20240229.yaml
+      - providers/anthropic/models/claude-haiku-4-5-20251001.yaml
       - providers/anthropic/models/claude-instant-1.2.yaml
       - providers/anthropic/models/claude-opus-4-0-20250514.yaml
       - providers/anthropic/models/claude-opus-4-1-20250805.yaml
+      - providers/anthropic/models/claude-opus-4-5-20251101.yaml
+      - providers/anthropic/models/claude-opus-4-6.yaml
       - providers/anthropic/models/claude-opus-4-latest.yaml
       - providers/anthropic/models/claude-sonnet-4-20250514.yaml
+      - providers/anthropic/models/claude-sonnet-4-5-20250929.yaml
       - providers/anthropic/models/claude-sonnet-4-latest.yaml
 
   - name: cohere
@@ -90,11 +94,25 @@ providers:
     models:
       - providers/openai/models/gpt-3.5-turbo.yaml
       - providers/openai/models/gpt-4-turbo.yaml
+      - providers/openai/models/gpt-4.1-mini.yaml
+      - providers/openai/models/gpt-4.1-nano.yaml
+      - providers/openai/models/gpt-4.1.yaml
       - providers/openai/models/gpt-4.yaml
       - providers/openai/models/gpt-4o-mini.yaml
       - providers/openai/models/gpt-4o.yaml
+      - providers/openai/models/gpt-5-codex.yaml
       - providers/openai/models/gpt-5-nano.yaml
+      - providers/openai/models/gpt-5.1-codex-max.yaml
+      - providers/openai/models/gpt-5.1-codex-mini.yaml
+      - providers/openai/models/gpt-5.1-codex.yaml
       - providers/openai/models/gpt-5.1.yaml
+      - providers/openai/models/gpt-5.2-codex.yaml
+      - providers/openai/models/gpt-5.3-codex-spark.yaml
+      - providers/openai/models/gpt-5.3-codex.yaml
+      - providers/openai/models/o1.yaml
+      - providers/openai/models/o3-mini.yaml
+      - providers/openai/models/o3.yaml
+      - providers/openai/models/o4-mini.yaml
       - providers/openai/models/text-embedding-3-large.yaml
       - providers/openai/models/text-embedding-3-small.yaml
       - providers/openai/models/text-embedding-ada-002.yaml
@@ -115,6 +133,6 @@ providers:
 # Statistics
 stats:
   total_providers: 8
-  total_models: 48
+  total_models: 66
   static_providers: 5
   meta_providers: 3
