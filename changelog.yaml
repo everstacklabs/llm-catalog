@@ -1,4 +1,68 @@
 versions:
+  - version: "2.1.0"
+    date: "2026-02-13"
+    description: "Add latest OpenAI models (GPT-4.1, o-series, Codex) and Anthropic models (Opus 4.6, Opus 4.5, Sonnet 4.5, Haiku 4.5)"
+    changes:
+      new_models:
+        - provider: openai
+          model: gpt-4.1
+          display_name: "GPT-4.1"
+        - provider: openai
+          model: gpt-4.1-mini
+          display_name: "GPT-4.1 Mini"
+        - provider: openai
+          model: gpt-4.1-nano
+          display_name: "GPT-4.1 Nano"
+        - provider: openai
+          model: o3
+          display_name: "o3"
+        - provider: openai
+          model: o4-mini
+          display_name: "o4-mini"
+        - provider: openai
+          model: o3-mini
+          display_name: "o3-mini"
+        - provider: openai
+          model: o1
+          display_name: "o1"
+        - provider: openai
+          model: gpt-5.3-codex
+          display_name: "GPT-5.3 Codex"
+        - provider: openai
+          model: gpt-5.3-codex-spark
+          display_name: "GPT-5.3 Codex Spark"
+        - provider: openai
+          model: gpt-5.2-codex
+          display_name: "GPT-5.2 Codex"
+        - provider: openai
+          model: gpt-5.1-codex
+          display_name: "GPT-5.1 Codex"
+        - provider: openai
+          model: gpt-5.1-codex-max
+          display_name: "GPT-5.1 Codex Max"
+        - provider: openai
+          model: gpt-5.1-codex-mini
+          display_name: "GPT-5.1 Codex Mini"
+        - provider: openai
+          model: gpt-5-codex
+          display_name: "GPT-5 Codex"
+        - provider: anthropic
+          model: claude-opus-4-6
+          display_name: "Claude Opus 4.6"
+        - provider: anthropic
+          model: claude-opus-4-5-20251101
+          display_name: "Claude Opus 4.5"
+        - provider: anthropic
+          model: claude-sonnet-4-5-20250929
+          display_name: "Claude Sonnet 4.5"
+        - provider: anthropic
+          model: claude-haiku-4-5-20251001
+          display_name: "Claude Haiku 4.5"
+      new_providers: []
+      updated_models: []
+      deprecated_models: []
+      pricing_changes: []
+
   - version: "2.0.0"
     date: "2025-12-26"
     description: "Major restructure: hierarchical directory structure with individual model files"

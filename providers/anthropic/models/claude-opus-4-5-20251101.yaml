@@ -1,11 +1,11 @@
-name: "claude-sonnet-4-20250514"
-display_name: "Claude Sonnet 4"
+name: "claude-opus-4-5-20251101"
+display_name: "Claude Opus 4.5"
 family: "claude-4"
 status: "stable"
 
 cost:
-  input_per_1k: 0.003
-  output_per_1k: 0.015
+  input_per_1k: 0.005
+  output_per_1k: 0.025
 
 limits:
   max_tokens: 200000
@@ -21,4 +21,3 @@ capabilities:
 modalities:
   input: ["text", "image"]
   output: ["text"]
-

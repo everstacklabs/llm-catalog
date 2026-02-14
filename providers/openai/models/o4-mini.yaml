@@ -1,22 +1,22 @@
-name: "claude-3-opus-20240229"
-display_name: "Claude 3 Opus"
-family: "claude-3"
+name: "o4-mini"
+display_name: "o4-mini"
+family: "o"
 status: "stable"
 
 cost:
-  input_per_1k: 0.015
-  output_per_1k: 0.075
+  input_per_1k: 0.0011
+  output_per_1k: 0.0044
 
 limits:
   max_tokens: 200000
-  max_completion_tokens: 4096
+  max_completion_tokens: 100000
 
 capabilities:
   - chat
   - function_calling
   - vision
+  - reasoning
 
 modalities:
   input: ["text", "image"]
   output: ["text"]
-

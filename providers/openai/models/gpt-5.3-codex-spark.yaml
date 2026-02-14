@@ -1,0 +1,22 @@
+name: "gpt-5.3-codex-spark"
+display_name: "GPT-5.3 Codex Spark"
+family: "gpt-5"
+status: "preview"
+
+cost:
+  input_per_1k: 0.00175
+  output_per_1k: 0.014
+
+limits:
+  max_tokens: 400000
+  max_completion_tokens: 128000
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text", "image"]
+  output: ["text"]

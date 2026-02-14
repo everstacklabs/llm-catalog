@@ -1,0 +1,21 @@
+name: "gpt-4.1"
+display_name: "GPT-4.1"
+family: "gpt-4.1"
+status: "stable"
+
+cost:
+  input_per_1k: 0.002
+  output_per_1k: 0.008
+
+limits:
+  max_tokens: 1048576
+  max_completion_tokens: 32768
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+
+modalities:
+  input: ["text", "image"]
+  output: ["text"]
