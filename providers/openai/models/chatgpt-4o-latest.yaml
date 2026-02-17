@@ -1,0 +1,16 @@
+name: chatgpt-4o-latest
+display_name: Chatgpt 4o Latest
+family: other
+status: stable
+limits:
+    max_tokens: 128000
+capabilities:
+    - chat
+    - function_calling
+    - vision
+modalities:
+    input:
+        - text
+        - image
+    output:
+        - text

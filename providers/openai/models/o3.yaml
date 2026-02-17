@@ -1,22 +1,18 @@
-name: "o3"
-display_name: "o3"
-family: "o"
-status: "stable"
-
+name: o3
+display_name: O3
+family: o-series
+status: stable
 cost:
-  input_per_1k: 0.01
-  output_per_1k: 0.04
-
+    input_per_1k: 0.01
+    output_per_1k: 0.04
 limits:
-  max_tokens: 200000
-  max_completion_tokens: 100000
-
+    max_tokens: 200000
+    max_completion_tokens: 100000
 capabilities:
-  - chat
-  - function_calling
-  - vision
-  - reasoning
-
+    - chat
+    - function_calling
 modalities:
-  input: ["text", "image"]
-  output: ["text"]
+    input:
+        - text
+    output:
+        - text

@@ -11,8 +11,11 @@ limits:
   max_tokens: 400000
   max_completion_tokens: 128000
 
+api_type: "responses"
+
 capabilities:
   - chat
+  - completions
   - function_calling
   - vision
   - reasoning

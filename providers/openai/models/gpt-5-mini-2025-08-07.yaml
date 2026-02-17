@@ -1,0 +1,17 @@
+name: gpt-5-mini-2025-08-07
+display_name: GPT 5 Mini 2025 08 07
+family: gpt-5
+status: stable
+limits:
+    max_tokens: 128000
+    max_completion_tokens: 16384
+capabilities:
+    - chat
+    - function_calling
+    - vision
+modalities:
+    input:
+        - text
+        - image
+    output:
+        - text

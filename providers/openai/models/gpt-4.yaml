@@ -1,21 +1,18 @@
-name: "gpt-4"
-display_name: "GPT-4"
-family: "gpt-4"
-status: "stable"
-
+name: gpt-4
+display_name: GPT-4
+family: gpt-4
+status: stable
 cost:
-  input_per_1k: 0.03
-  output_per_1k: 0.06
-
+    input_per_1k: 0.03
+    output_per_1k: 0.06
 limits:
-  max_tokens: 8192
-  max_completion_tokens: 8192
-
+    max_tokens: 128000
+    max_completion_tokens: 16384
 capabilities:
-  - chat
-  - function_calling
-
+    - chat
+    - function_calling
 modalities:
-  input: ["text"]
-  output: ["text"]
-
+    input:
+        - text
+    output:
+        - text

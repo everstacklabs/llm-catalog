@@ -2,8 +2,8 @@
 # Auto-generated - DO NOT EDIT MANUALLY
 # Run: ./scripts/generate-manifest.sh to regenerate
 
-version: "2.1.2"
-generated_at: "2026-02-14T12:37:37Z"
+version: "2.2.4"
+generated_at: "2026-02-17T21:03:26Z"
 schema_version: "1.0"
 
 providers:
@@ -101,27 +101,104 @@ providers:
       - providers/openai/categories.yaml
       - providers/openai/templates.yaml
     models:
+      - providers/openai/models/chatgpt-4o-latest.yaml
+      - providers/openai/models/chatgpt-image-latest.yaml
+      - providers/openai/models/gpt-3.5-turbo-16k.yaml
+      - providers/openai/models/gpt-3.5-turbo-instruct.yaml
       - providers/openai/models/gpt-3.5-turbo.yaml
+      - providers/openai/models/gpt-4-turbo-2024-04-09.yaml
+      - providers/openai/models/gpt-4-turbo-preview.yaml
       - providers/openai/models/gpt-4-turbo.yaml
+      - providers/openai/models/gpt-4.1-2025-04-14.yaml
+      - providers/openai/models/gpt-4.1-mini-2025-04-14.yaml
       - providers/openai/models/gpt-4.1-mini.yaml
+      - providers/openai/models/gpt-4.1-nano-2025-04-14.yaml
       - providers/openai/models/gpt-4.1-nano.yaml
       - providers/openai/models/gpt-4.1.yaml
       - providers/openai/models/gpt-4.yaml
+      - providers/openai/models/gpt-4o-2024-05-13.yaml
+      - providers/openai/models/gpt-4o-2024-08-06.yaml
+      - providers/openai/models/gpt-4o-2024-11-20.yaml
+      - providers/openai/models/gpt-4o-audio-preview-2024-12-17.yaml
+      - providers/openai/models/gpt-4o-audio-preview-2025-06-03.yaml
+      - providers/openai/models/gpt-4o-audio-preview.yaml
+      - providers/openai/models/gpt-4o-mini-2024-07-18.yaml
+      - providers/openai/models/gpt-4o-mini-audio-preview-2024-12-17.yaml
+      - providers/openai/models/gpt-4o-mini-audio-preview.yaml
+      - providers/openai/models/gpt-4o-mini-realtime-preview-2024-12-17.yaml
+      - providers/openai/models/gpt-4o-mini-realtime-preview.yaml
+      - providers/openai/models/gpt-4o-mini-search-preview-2025-03-11.yaml
+      - providers/openai/models/gpt-4o-mini-search-preview.yaml
+      - providers/openai/models/gpt-4o-mini-transcribe-2025-03-20.yaml
+      - providers/openai/models/gpt-4o-mini-transcribe-2025-12-15.yaml
+      - providers/openai/models/gpt-4o-mini-transcribe.yaml
+      - providers/openai/models/gpt-4o-mini-tts-2025-03-20.yaml
+      - providers/openai/models/gpt-4o-mini-tts-2025-12-15.yaml
+      - providers/openai/models/gpt-4o-mini-tts.yaml
       - providers/openai/models/gpt-4o-mini.yaml
+      - providers/openai/models/gpt-4o-realtime-preview-2024-12-17.yaml
+      - providers/openai/models/gpt-4o-realtime-preview-2025-06-03.yaml
+      - providers/openai/models/gpt-4o-realtime-preview.yaml
+      - providers/openai/models/gpt-4o-search-preview-2025-03-11.yaml
+      - providers/openai/models/gpt-4o-search-preview.yaml
+      - providers/openai/models/gpt-4o-transcribe-diarize.yaml
+      - providers/openai/models/gpt-4o-transcribe.yaml
       - providers/openai/models/gpt-4o.yaml
+      - providers/openai/models/gpt-5-2025-08-07.yaml
+      - providers/openai/models/gpt-5-chat-latest.yaml
       - providers/openai/models/gpt-5-codex.yaml
+      - providers/openai/models/gpt-5-mini-2025-08-07.yaml
+      - providers/openai/models/gpt-5-mini.yaml
+      - providers/openai/models/gpt-5-nano-2025-08-07.yaml
       - providers/openai/models/gpt-5-nano.yaml
+      - providers/openai/models/gpt-5-pro-2025-10-06.yaml
+      - providers/openai/models/gpt-5-pro.yaml
+      - providers/openai/models/gpt-5-search-api-2025-10-14.yaml
+      - providers/openai/models/gpt-5-search-api.yaml
+      - providers/openai/models/gpt-5.1-2025-11-13.yaml
+      - providers/openai/models/gpt-5.1-chat-latest.yaml
       - providers/openai/models/gpt-5.1-codex-max.yaml
       - providers/openai/models/gpt-5.1-codex-mini.yaml
       - providers/openai/models/gpt-5.1-codex.yaml
       - providers/openai/models/gpt-5.1.yaml
+      - providers/openai/models/gpt-5.2-2025-12-11.yaml
+      - providers/openai/models/gpt-5.2-chat-latest.yaml
       - providers/openai/models/gpt-5.2-codex.yaml
+      - providers/openai/models/gpt-5.2-pro-2025-12-11.yaml
+      - providers/openai/models/gpt-5.2-pro.yaml
+      - providers/openai/models/gpt-5.2.yaml
       - providers/openai/models/gpt-5.3-codex-spark.yaml
       - providers/openai/models/gpt-5.3-codex.yaml
+      - providers/openai/models/gpt-5.yaml
+      - providers/openai/models/gpt-audio-2025-08-28.yaml
+      - providers/openai/models/gpt-audio-mini-2025-10-06.yaml
+      - providers/openai/models/gpt-audio-mini-2025-12-15.yaml
+      - providers/openai/models/gpt-audio-mini.yaml
+      - providers/openai/models/gpt-audio.yaml
+      - providers/openai/models/gpt-image-1-mini.yaml
+      - providers/openai/models/gpt-image-1.5.yaml
+      - providers/openai/models/gpt-image-1.yaml
+      - providers/openai/models/gpt-realtime-2025-08-28.yaml
+      - providers/openai/models/gpt-realtime-mini-2025-10-06.yaml
+      - providers/openai/models/gpt-realtime-mini-2025-12-15.yaml
+      - providers/openai/models/gpt-realtime-mini.yaml
+      - providers/openai/models/gpt-realtime.yaml
+      - providers/openai/models/o1-2024-12-17.yaml
+      - providers/openai/models/o1-pro-2025-03-19.yaml
+      - providers/openai/models/o1-pro.yaml
       - providers/openai/models/o1.yaml
+      - providers/openai/models/o3-2025-04-16.yaml
+      - providers/openai/models/o3-mini-2025-01-31.yaml
       - providers/openai/models/o3-mini.yaml
       - providers/openai/models/o3.yaml
+      - providers/openai/models/o4-mini-2025-04-16.yaml
+      - providers/openai/models/o4-mini-deep-research-2025-06-26.yaml
+      - providers/openai/models/o4-mini-deep-research.yaml
       - providers/openai/models/o4-mini.yaml
+      - providers/openai/models/omni-moderation-2024-09-26.yaml
+      - providers/openai/models/omni-moderation-latest.yaml
+      - providers/openai/models/sora-2-pro.yaml
+      - providers/openai/models/sora-2.yaml
       - providers/openai/models/text-embedding-3-large.yaml
       - providers/openai/models/text-embedding-3-small.yaml
       - providers/openai/models/text-embedding-ada-002.yaml
@@ -142,6 +219,6 @@ providers:
 # Statistics
 stats:
   total_providers: 8
-  total_models: 75
+  total_models: 152
   static_providers: 5
   meta_providers: 3

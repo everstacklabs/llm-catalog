@@ -1,0 +1,15 @@
+name: o1-2024-12-17
+display_name: O1 2024 12 17
+family: o-series
+status: stable
+limits:
+    max_tokens: 200000
+    max_completion_tokens: 100000
+capabilities:
+    - chat
+    - function_calling
+modalities:
+    input:
+        - text
+    output:
+        - text

@@ -1,21 +1,18 @@
-name: "o1"
-display_name: "o1"
-family: "o"
-status: "stable"
-
+name: o1
+display_name: O1
+family: o-series
+status: stable
 cost:
-  input_per_1k: 0.015
-  output_per_1k: 0.06
-
+    input_per_1k: 0.015
+    output_per_1k: 0.06
 limits:
-  max_tokens: 200000
-  max_completion_tokens: 100000
-
+    max_tokens: 200000
+    max_completion_tokens: 100000
 capabilities:
-  - chat
-  - function_calling
-  - reasoning
-
+    - chat
+    - function_calling
 modalities:
-  input: ["text"]
-  output: ["text"]
+    input:
+        - text
+    output:
+        - text

@@ -1,0 +1,14 @@
+name: gpt-image-1
+display_name: Gpt Image 1
+family: other
+status: stable
+limits:
+    max_tokens: 128000
+capabilities:
+    - chat
+    - function_calling
+modalities:
+    input:
+        - text
+    output:
+        - text

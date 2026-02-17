@@ -1,0 +1,17 @@
+name: gpt-4-turbo-2024-04-09
+display_name: GPT 4 Turbo 2024 04 09
+family: gpt-4
+status: stable
+limits:
+    max_tokens: 128000
+    max_completion_tokens: 16384
+capabilities:
+    - chat
+    - function_calling
+    - vision
+modalities:
+    input:
+        - text
+        - image
+    output:
+        - text
