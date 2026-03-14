@@ -1,0 +1,20 @@
+name: "kimi-k2-thinking"
+display_name: "Kimi K2 Thinking"
+family: "kimi-k2"
+status: "stable"
+
+cost:
+  input_per_1k: 0.0006
+  output_per_1k: 0.0025
+
+limits:
+  max_tokens: 262144
+  max_completion_tokens: 16384
+
+capabilities:
+  - chat
+  - function_calling
+
+modalities:
+  input: ["text"]
+  output: ["text"]

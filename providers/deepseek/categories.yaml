@@ -1,0 +1,10 @@
+chat:
+  - deepseek-chat
+  - deepseek-reasoner
+
+function_calling:
+  - deepseek-chat
+  - deepseek-reasoner
+
+reasoning:
+  - deepseek-reasoner

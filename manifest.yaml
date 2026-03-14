@@ -2,8 +2,8 @@
 # Auto-generated - DO NOT EDIT MANUALLY
 # Run: ./scripts/generate-manifest.sh to regenerate
 
-version: "2.2.4"
-generated_at: "2026-02-17T21:03:26Z"
+version: "2.2.5"
+generated_at: "2026-03-14T00:06:49Z"
 schema_version: "1.0"
 
 providers:
@@ -55,6 +55,15 @@ providers:
       - providers/cohere/models/embed-v4.0.yaml
       - providers/cohere/models/rerank-v3.5.yaml
 
+  - name: deepseek
+    files:
+      - providers/deepseek/provider.yaml
+      - providers/deepseek/categories.yaml
+      - providers/deepseek/templates.yaml
+    models:
+      - providers/deepseek/models/deepseek-chat.yaml
+      - providers/deepseek/models/deepseek-reasoner.yaml
+
   - name: google
     files:
       - providers/google/provider.yaml
@@ -78,6 +87,19 @@ providers:
       - providers/huggingface/models/huggingface-gpt-4o.yaml
       - providers/huggingface/models/huggingface-text-embedding-ada-002.yaml
 
+  - name: minimax
+    files:
+      - providers/minimax/provider.yaml
+      - providers/minimax/categories.yaml
+      - providers/minimax/templates.yaml
+    models:
+      - providers/minimax/models/MiniMax-M1.yaml
+      - providers/minimax/models/MiniMax-M2.1-highspeed.yaml
+      - providers/minimax/models/MiniMax-M2.1.yaml
+      - providers/minimax/models/MiniMax-M2.5-highspeed.yaml
+      - providers/minimax/models/MiniMax-M2.5.yaml
+      - providers/minimax/models/MiniMax-M2.yaml
+
   - name: mistral
     files:
       - providers/mistral/provider.yaml
@@ -86,6 +108,22 @@ providers:
     models:
       - providers/mistral/models/magistral-small-2509.yaml
       - providers/mistral/models/voxtral-small-2507.yaml
+
+  - name: moonshot
+    files:
+      - providers/moonshot/provider.yaml
+      - providers/moonshot/categories.yaml
+      - providers/moonshot/templates.yaml
+    models:
+      - providers/moonshot/models/kimi-k2-0711-preview.yaml
+      - providers/moonshot/models/kimi-k2-0905-preview.yaml
+      - providers/moonshot/models/kimi-k2-thinking-turbo.yaml
+      - providers/moonshot/models/kimi-k2-thinking.yaml
+      - providers/moonshot/models/kimi-k2-turbo-preview.yaml
+      - providers/moonshot/models/kimi-k2.5.yaml
+      - providers/moonshot/models/moonshot-v1-128k.yaml
+      - providers/moonshot/models/moonshot-v1-32k.yaml
+      - providers/moonshot/models/moonshot-v1-8k.yaml
 
   - name: ollama
     files:
@@ -216,9 +254,32 @@ providers:
       - providers/openrouter/models/openai-gpt-4o.yaml
       - providers/openrouter/models/openai-text-embedding-ada-002.yaml
 
+  - name: qwen
+    files:
+      - providers/qwen/provider.yaml
+      - providers/qwen/categories.yaml
+      - providers/qwen/templates.yaml
+    models:
+      - providers/qwen/models/qwen-vl-max.yaml
+      - providers/qwen/models/qwen-vl-plus.yaml
+      - providers/qwen/models/qwen2.5-72b-instruct.yaml
+      - providers/qwen/models/qwen3-14b.yaml
+      - providers/qwen/models/qwen3-235b-a22b.yaml
+      - providers/qwen/models/qwen3-32b.yaml
+      - providers/qwen/models/qwen3-8b.yaml
+      - providers/qwen/models/qwen3-max.yaml
+      - providers/qwen/models/qwen3-tts-flash.yaml
+      - providers/qwen/models/qwen3-tts-instruct-flash.yaml
+      - providers/qwen/models/qwen3-tts-vc.yaml
+      - providers/qwen/models/qwen3-tts-vd.yaml
+      - providers/qwen/models/qwen3.5-flash.yaml
+      - providers/qwen/models/qwen3.5-plus.yaml
+      - providers/qwen/models/qwq-plus.yaml
+      - providers/qwen/models/text-embedding-v3.yaml
+
 # Statistics
 stats:
-  total_providers: 8
-  total_models: 152
-  static_providers: 5
+  total_providers: 12
+  total_models: 185
+  static_providers: 9
   meta_providers: 3

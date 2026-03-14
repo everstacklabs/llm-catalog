@@ -1,0 +1,20 @@
+name: "qwen3-max"
+display_name: "Qwen3 Max"
+family: "qwen3-commercial"
+status: "stable"
+
+cost:
+  input_per_1k: 0.002
+  output_per_1k: 0.006
+
+limits:
+  max_tokens: 262144
+  max_completion_tokens: 16384
+
+capabilities:
+  - chat
+  - function_calling
+
+modalities:
+  input: ["text"]
+  output: ["text"]

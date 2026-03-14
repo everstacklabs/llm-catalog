@@ -1,0 +1,21 @@
+name: "deepseek-reasoner"
+display_name: "DeepSeek Reasoner"
+family: "deepseek-v3"
+status: "stable"
+
+cost:
+  input_per_1k: 0.00028
+  output_per_1k: 0.00042
+
+limits:
+  max_tokens: 128000
+  max_completion_tokens: 64000
+
+capabilities:
+  - chat
+  - function_calling
+  - reasoning
+
+modalities:
+  input: ["text"]
+  output: ["text"]

@@ -1,0 +1,20 @@
+name: "MiniMax-M2"
+display_name: "MiniMax M2"
+family: "minimax-m2"
+status: "stable"
+
+cost:
+  input_per_1k: 0.001
+  output_per_1k: 0.004
+
+limits:
+  max_tokens: 200000
+  max_completion_tokens: 128000
+
+capabilities:
+  - chat
+  - function_calling
+
+modalities:
+  input: ["text"]
+  output: ["text"]

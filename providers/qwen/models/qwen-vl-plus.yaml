@@ -1,0 +1,21 @@
+name: "qwen-vl-plus"
+display_name: "Qwen VL Plus"
+family: "qwen-vl"
+status: "stable"
+
+cost:
+  input_per_1k: 0.001
+  output_per_1k: 0.003
+
+limits:
+  max_tokens: 131072
+  max_completion_tokens: 8192
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+
+modalities:
+  input: ["text", "image", "video"]
+  output: ["text"]

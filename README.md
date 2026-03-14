@@ -184,7 +184,7 @@ The catalog is synced to self-hosted gateways via the manifest:
 Default sync URL:
 
 ```
-https://raw.githubusercontent.com/midfusion/midfusion/main/model-catalog/
+https://raw.githubusercontent.com/everstacklabs/everstack/main/model-catalog/
 ```
 
 ## Version Format
