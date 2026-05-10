@@ -1,0 +1,22 @@
+name: gemini-2.0-flash
+display_name: Gemini 2.0 Flash
+family: gemini
+status: stable
+
+cost:
+  input_per_1k: 0.0001
+  output_per_1k: 0.0004
+  cache_read_per_1k: 0.000025
+
+limits:
+  max_tokens: 1048576
+  max_completion_tokens: 8192
+
+capabilities:
+  - chat
+  - vision
+  - function_calling
+
+modalities:
+  input: [text, image, audio, video]
+  output: [text]

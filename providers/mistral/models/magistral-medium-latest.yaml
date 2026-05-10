@@ -1,0 +1,21 @@
+name: "magistral-medium-latest"
+display_name: "Magistral Medium (Latest)"
+family: "magistral"
+status: "stable"
+
+cost:
+  input_per_1k: 0.002
+  output_per_1k: 0.005
+
+limits:
+  max_tokens: 128000
+  max_completion_tokens: 16384
+
+capabilities:
+  - chat
+  - function_calling
+  - reasoning
+
+modalities:
+  input: ["text"]
+  output: ["text"]

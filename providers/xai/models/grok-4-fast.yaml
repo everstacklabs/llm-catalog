@@ -1,0 +1,22 @@
+name: "grok-4-fast"
+display_name: "Grok 4 Fast"
+family: "grok"
+status: "stable"
+
+cost:
+  input_per_1k: 0.0002
+  output_per_1k: 0.0005
+
+limits:
+  max_tokens: 2000000
+  max_completion_tokens: 30000
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text", "image"]
+  output: ["text"]

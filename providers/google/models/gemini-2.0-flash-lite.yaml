@@ -1,0 +1,20 @@
+name: gemini-2.0-flash-lite
+display_name: Gemini 2.0 Flash Lite
+family: gemini
+status: stable
+
+cost:
+  input_per_1k: 0.000075
+  output_per_1k: 0.0003
+
+limits:
+  max_tokens: 1048576
+  max_completion_tokens: 8192
+
+capabilities:
+  - chat
+  - function_calling
+
+modalities:
+  input: [text]
+  output: [text]

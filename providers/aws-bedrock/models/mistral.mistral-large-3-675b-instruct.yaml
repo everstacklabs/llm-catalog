@@ -1,0 +1,21 @@
+name: "mistral.mistral-large-3-675b-instruct"
+display_name: "Mistral Large 3 (Bedrock)"
+family: "mistral"
+status: "stable"
+
+cost:
+  input_per_1k: 0.0005
+  output_per_1k: 0.0015
+
+limits:
+  max_tokens: 256000
+  max_completion_tokens: 8192
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+
+modalities:
+  input: ["text", "image"]
+  output: ["text"]

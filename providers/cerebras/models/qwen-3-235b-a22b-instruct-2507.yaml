@@ -1,0 +1,20 @@
+name: "qwen-3-235b-a22b-instruct-2507"
+display_name: "Qwen 3 235B Instruct"
+family: "qwen"
+status: "stable"
+
+cost:
+  input_per_1k: 0.0006
+  output_per_1k: 0.0012
+
+limits:
+  max_tokens: 131000
+  max_completion_tokens: 32000
+
+capabilities:
+  - chat
+  - function_calling
+
+modalities:
+  input: ["text"]
+  output: ["text"]

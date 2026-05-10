@@ -1,0 +1,22 @@
+name: "grok-4.3"
+display_name: "Grok 4.3"
+family: "grok"
+status: "stable"
+
+cost:
+  input_per_1k: 0.00125
+  output_per_1k: 0.0025
+
+limits:
+  max_tokens: 1000000
+  max_completion_tokens: 30000
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text", "image"]
+  output: ["text"]

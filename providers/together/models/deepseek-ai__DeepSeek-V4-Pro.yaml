@@ -1,0 +1,22 @@
+name: "deepseek-ai/DeepSeek-V4-Pro"
+display_name: "DeepSeek V4 Pro (Together)"
+family: "deepseek-v4"
+status: "stable"
+
+cost:
+  input_per_1k: 0.0021
+  output_per_1k: 0.0044
+  cache_read_per_1k: 0.0002
+
+limits:
+  max_tokens: 512000
+  max_completion_tokens: 384000
+
+capabilities:
+  - chat
+  - function_calling
+  - reasoning
+
+modalities:
+  input: ["text"]
+  output: ["text"]

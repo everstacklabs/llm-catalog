@@ -1,0 +1,23 @@
+name: "gpt-5.4-nano"
+display_name: "GPT-5.4 Nano"
+family: "gpt-5"
+status: "stable"
+
+cost:
+  input_per_1k: 0.0002
+  output_per_1k: 0.00125
+  cache_read_per_1k: 0.00002
+
+limits:
+  max_tokens: 400000
+  max_completion_tokens: 128000
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text", "image"]
+  output: ["text"]

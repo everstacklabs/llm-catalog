@@ -1,0 +1,21 @@
+name: "accounts/fireworks/models/deepseek-v4-pro"
+display_name: "DeepSeek V4 Pro (Fireworks)"
+family: "deepseek-v4"
+status: "stable"
+
+cost:
+  input_per_1k: 0.00174
+  output_per_1k: 0.00348
+
+limits:
+  max_tokens: 1000000
+  max_completion_tokens: 384000
+
+capabilities:
+  - chat
+  - function_calling
+  - reasoning
+
+modalities:
+  input: ["text"]
+  output: ["text"]

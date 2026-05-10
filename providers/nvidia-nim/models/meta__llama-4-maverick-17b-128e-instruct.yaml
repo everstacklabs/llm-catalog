@@ -1,0 +1,21 @@
+name: "meta/llama-4-maverick-17b-128e-instruct"
+display_name: "Llama 4 Maverick 17B 128E"
+family: "llama"
+status: "stable"
+
+cost:
+  input_per_1k: 0
+  output_per_1k: 0
+
+limits:
+  max_tokens: 128000
+  max_completion_tokens: 4096
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+
+modalities:
+  input: ["text", "image"]
+  output: ["text"]

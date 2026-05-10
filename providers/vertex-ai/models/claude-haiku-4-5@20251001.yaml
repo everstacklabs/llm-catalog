@@ -1,0 +1,23 @@
+name: "claude-haiku-4-5@20251001"
+display_name: "Claude Haiku 4.5 (Vertex)"
+family: "claude-4"
+status: "stable"
+
+cost:
+  input_per_1k: 0.001
+  output_per_1k: 0.005
+  cache_read_per_1k: 0.0001
+
+limits:
+  max_tokens: 200000
+  max_completion_tokens: 64000
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text", "image", "pdf"]
+  output: ["text"]

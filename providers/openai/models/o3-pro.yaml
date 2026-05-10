@@ -1,0 +1,22 @@
+name: "o3-pro"
+display_name: "o3-pro"
+family: "o-series"
+status: "stable"
+
+cost:
+  input_per_1k: 0.02
+  output_per_1k: 0.08
+
+limits:
+  max_tokens: 200000
+  max_completion_tokens: 100000
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text", "image"]
+  output: ["text"]

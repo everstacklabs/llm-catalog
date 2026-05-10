@@ -1,0 +1,21 @@
+name: "accounts/fireworks/models/qwen3p6-plus"
+display_name: "Qwen 3.6 Plus (Fireworks)"
+family: "qwen"
+status: "stable"
+
+cost:
+  input_per_1k: 0.0005
+  output_per_1k: 0.003
+
+limits:
+  max_tokens: 128000
+  max_completion_tokens: 8192
+
+capabilities:
+  - chat
+  - function_calling
+  - reasoning
+
+modalities:
+  input: ["text"]
+  output: ["text"]

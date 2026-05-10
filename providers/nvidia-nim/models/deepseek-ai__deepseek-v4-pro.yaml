@@ -1,0 +1,22 @@
+name: "deepseek-ai/deepseek-v4-pro"
+display_name: "DeepSeek V4 Pro (NIM)"
+family: "deepseek-v4"
+status: "stable"
+
+cost:
+  input_per_1k: 0.00174
+  output_per_1k: 0.00348
+  cache_read_per_1k: 0.000145
+
+limits:
+  max_tokens: 1048576
+  max_completion_tokens: 393216
+
+capabilities:
+  - chat
+  - function_calling
+  - reasoning
+
+modalities:
+  input: ["text"]
+  output: ["text"]

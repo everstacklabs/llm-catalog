@@ -1,0 +1,22 @@
+name: "mistral-small-latest"
+display_name: "Mistral Small (Latest)"
+family: "mistral-small"
+status: "stable"
+
+cost:
+  input_per_1k: 0.00015
+  output_per_1k: 0.0006
+
+limits:
+  max_tokens: 256000
+  max_completion_tokens: 256000
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text", "image"]
+  output: ["text"]

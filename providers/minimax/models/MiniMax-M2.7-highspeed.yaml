@@ -1,0 +1,21 @@
+name: "MiniMax-M2.7-highspeed"
+display_name: "MiniMax M2.7 Highspeed"
+family: "minimax-m2.7"
+status: "stable"
+
+cost:
+  input_per_1k: 0.0006
+  output_per_1k: 0.0024
+
+limits:
+  max_tokens: 204800
+  max_completion_tokens: 131072
+
+capabilities:
+  - chat
+  - function_calling
+  - reasoning
+
+modalities:
+  input: ["text"]
+  output: ["text"]

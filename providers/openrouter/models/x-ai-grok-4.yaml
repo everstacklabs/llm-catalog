@@ -1,0 +1,21 @@
+name: "x-ai/grok-4"
+display_name: "Grok 4 (OR)"
+family: "grok"
+status: "stable"
+
+cost:
+  input_per_1k: 0.003
+  output_per_1k: 0.015
+
+limits:
+  max_tokens: 256000
+  max_completion_tokens: 32000
+
+capabilities:
+  - chat
+  - function_calling
+  - reasoning
+
+modalities:
+  input: ["text"]
+  output: ["text"]

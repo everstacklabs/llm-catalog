@@ -1,0 +1,21 @@
+name: "accounts/fireworks/models/deepseek-v3p2"
+display_name: "DeepSeek V3.2 (Fireworks)"
+family: "deepseek"
+status: "stable"
+
+cost:
+  input_per_1k: 0.00056
+  output_per_1k: 0.00168
+
+limits:
+  max_tokens: 160000
+  max_completion_tokens: 160000
+
+capabilities:
+  - chat
+  - function_calling
+  - reasoning
+
+modalities:
+  input: ["text"]
+  output: ["text"]

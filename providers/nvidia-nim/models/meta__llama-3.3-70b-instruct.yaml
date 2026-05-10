@@ -1,0 +1,22 @@
+name: "meta/llama-3.3-70b-instruct"
+display_name: "Llama 3.3 70B Instruct"
+family: "llama"
+status: "stable"
+
+cost:
+  input_per_1k: 0
+  output_per_1k: 0
+
+limits:
+  max_tokens: 128000
+  max_completion_tokens: 4096
+
+capabilities:
+  - chat
+  - function_calling
+
+modalities:
+  input: ["text"]
+  output: ["text"]
+
+notes: "Pricing on NVIDIA NIM is per-deployment / self-hosted; $0 indicates no per-token charge"

@@ -1,0 +1,23 @@
+name: "gpt-5.2"
+display_name: "GPT-5.2 (Azure)"
+family: "gpt-5"
+status: "stable"
+
+cost:
+  input_per_1k: 0.00175
+  output_per_1k: 0.014
+  cache_read_per_1k: 0.000125
+
+limits:
+  max_tokens: 400000
+  max_completion_tokens: 128000
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text", "image"]
+  output: ["text"]

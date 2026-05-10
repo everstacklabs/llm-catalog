@@ -1,0 +1,20 @@
+name: "llama-3.3-70b-versatile"
+display_name: "Llama 3.3 70B Versatile"
+family: "llama"
+status: "stable"
+
+cost:
+  input_per_1k: 0.00059
+  output_per_1k: 0.00079
+
+limits:
+  max_tokens: 131072
+  max_completion_tokens: 32768
+
+capabilities:
+  - chat
+  - function_calling
+
+modalities:
+  input: ["text"]
+  output: ["text"]

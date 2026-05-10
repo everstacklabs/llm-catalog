@@ -1,0 +1,21 @@
+name: "deepseek-v4-flash"
+display_name: "DeepSeek V4 Flash"
+family: "deepseek-v4"
+status: "stable"
+
+cost:
+  input_per_1k: 0.00014
+  output_per_1k: 0.00028
+
+limits:
+  max_tokens: 1000000
+  max_completion_tokens: 384000
+
+capabilities:
+  - chat
+  - function_calling
+  - reasoning
+
+modalities:
+  input: ["text"]
+  output: ["text"]

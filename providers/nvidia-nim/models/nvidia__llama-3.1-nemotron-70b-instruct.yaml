@@ -1,0 +1,20 @@
+name: "nvidia/llama-3.1-nemotron-70b-instruct"
+display_name: "Nemotron 70B Instruct"
+family: "nemotron"
+status: "stable"
+
+cost:
+  input_per_1k: 0.0012
+  output_per_1k: 0.0012
+
+limits:
+  max_tokens: 131072
+  max_completion_tokens: 16384
+
+capabilities:
+  - chat
+  - function_calling
+
+modalities:
+  input: ["text"]
+  output: ["text"]

@@ -1,0 +1,24 @@
+name: "claude-sonnet-4-6@default"
+display_name: "Claude Sonnet 4.6 (Vertex)"
+family: "claude-4"
+status: "stable"
+
+cost:
+  input_per_1k: 0.003
+  output_per_1k: 0.015
+  cache_read_per_1k: 0.0003
+  cache_write_per_1k: 0.00375
+
+limits:
+  max_tokens: 200000
+  max_completion_tokens: 64000
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text", "image", "pdf"]
+  output: ["text"]

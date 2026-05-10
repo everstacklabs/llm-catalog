@@ -1,0 +1,21 @@
+name: "gemini-1.5-flash-8b"
+display_name: "Gemini 1.5 Flash 8B"
+family: "gemini"
+status: "stable"
+
+cost:
+  input_per_1k: 0.0000375
+  output_per_1k: 0.00015
+
+limits:
+  max_tokens: 1000000
+  max_completion_tokens: 8192
+
+capabilities:
+  - chat
+  - vision
+  - function_calling
+
+modalities:
+  input: ["text", "image", "video", "audio"]
+  output: ["text"]

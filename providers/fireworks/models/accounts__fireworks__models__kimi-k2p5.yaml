@@ -1,0 +1,21 @@
+name: "accounts/fireworks/models/kimi-k2p5"
+display_name: "Kimi K2.5 (Fireworks)"
+family: "kimi"
+status: "stable"
+
+cost:
+  input_per_1k: 0.0006
+  output_per_1k: 0.003
+
+limits:
+  max_tokens: 256000
+  max_completion_tokens: 256000
+
+capabilities:
+  - chat
+  - function_calling
+  - reasoning
+
+modalities:
+  input: ["text"]
+  output: ["text"]

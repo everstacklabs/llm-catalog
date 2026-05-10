@@ -9,13 +9,13 @@ cost:
 
 limits:
   max_tokens: 262144
-  max_completion_tokens: 16384
+  max_completion_tokens: 262144
 
 capabilities:
   - chat
   - function_calling
-  - vision
+  - reasoning
 
 modalities:
-  input: ["text", "image"]
+  input: ["text"]
   output: ["text"]

@@ -1,0 +1,20 @@
+name: "accounts/fireworks/models/kimi-k2-instruct"
+display_name: "Kimi K2 Instruct (Fireworks)"
+family: "kimi"
+status: "stable"
+
+cost:
+  input_per_1k: 0.001
+  output_per_1k: 0.003
+
+limits:
+  max_tokens: 128000
+  max_completion_tokens: 16384
+
+capabilities:
+  - chat
+  - function_calling
+
+modalities:
+  input: ["text"]
+  output: ["text"]

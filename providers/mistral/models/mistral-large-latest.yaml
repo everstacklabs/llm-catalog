@@ -1,0 +1,23 @@
+name: "mistral-large-latest"
+display_name: "Mistral Large (Latest)"
+family: "mistral-large"
+status: "stable"
+
+cost:
+  input_per_1k: 0.0005
+  output_per_1k: 0.0015
+
+limits:
+  max_tokens: 262144
+  max_completion_tokens: 262144
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+
+modalities:
+  input: ["text", "image"]
+  output: ["text"]
+
+notes: "Alias to current Mistral Large; pricing reflects Mistral Large 3"

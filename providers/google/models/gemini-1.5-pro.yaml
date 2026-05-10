@@ -4,11 +4,12 @@ family: "gemini"
 status: "stable"
 
 cost:
-  input_per_1k: 0.0035
-  output_per_1k: 0.0105
+  input_per_1k: 0.00125
+  output_per_1k: 0.005
+  cache_read_per_1k: 0.0003125
 
 limits:
-  max_tokens: 1048576
+  max_tokens: 1000000
   max_completion_tokens: 8192
 
 capabilities:

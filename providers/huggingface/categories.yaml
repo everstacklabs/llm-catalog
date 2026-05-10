@@ -1,26 +1,27 @@
-# Model categories for Hugging Face
-# Note: Hugging Face is a meta-provider - models are discovered dynamically
-# These are example categories for commonly used models
+# Model categories for Hugging Face Inference Providers
+# These hosted models route through HF's Inference Providers network
 
 chat:
-  - huggingface/gpt-4o
-  - huggingface/gpt-4o-mini
-  - huggingface/gpt-4-turbo
-  - huggingface/gpt-4
-  - huggingface/gpt-3.5-turbo
-
-embeddings:
-  - huggingface/text-embedding-ada-002
-
-vision:
-  - huggingface/gpt-4o
-  - huggingface/gpt-4o-mini
-  - huggingface/gpt-4-turbo
+  - deepseek-ai/DeepSeek-V4-Pro
+  - moonshotai/Kimi-K2.6
+  - zai-org/GLM-5.1
+  - Qwen/Qwen3-Coder-480B-A35B-Instruct
+  - Qwen/Qwen3-Next-80B-A3B-Instruct
 
 function_calling:
-  - huggingface/gpt-4o
-  - huggingface/gpt-4o-mini
-  - huggingface/gpt-4-turbo
-  - huggingface/gpt-4
-  - huggingface/gpt-3.5-turbo
+  - deepseek-ai/DeepSeek-V4-Pro
+  - moonshotai/Kimi-K2.6
+  - zai-org/GLM-5.1
+  - Qwen/Qwen3-Coder-480B-A35B-Instruct
+  - Qwen/Qwen3-Next-80B-A3B-Instruct
 
+reasoning:
+  - deepseek-ai/DeepSeek-V4-Pro
+  - moonshotai/Kimi-K2.6
+  - zai-org/GLM-5.1
+
+vision:
+  - moonshotai/Kimi-K2.6
+
+coding:
+  - Qwen/Qwen3-Coder-480B-A35B-Instruct

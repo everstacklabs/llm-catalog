@@ -1,0 +1,23 @@
+name: gemini-2.5-pro
+display_name: Gemini 2.5 Pro
+family: gemini
+status: stable
+
+cost:
+  input_per_1k: 0.00125
+  output_per_1k: 0.01
+  cache_read_per_1k: 0.000125
+
+limits:
+  max_tokens: 1048576
+  max_completion_tokens: 65536
+
+capabilities:
+  - chat
+  - vision
+  - function_calling
+  - reasoning
+
+modalities:
+  input: [text, image, audio, video]
+  output: [text]

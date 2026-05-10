@@ -1,0 +1,22 @@
+name: "gpt-5-nano"
+display_name: "GPT-5 Nano (Azure)"
+family: "gpt-5"
+status: "stable"
+
+cost:
+  input_per_1k: 0.00005
+  output_per_1k: 0.0004
+  cache_read_per_1k: 0.000005
+
+limits:
+  max_tokens: 272000
+  max_completion_tokens: 128000
+
+capabilities:
+  - chat
+  - function_calling
+  - reasoning
+
+modalities:
+  input: ["text"]
+  output: ["text"]

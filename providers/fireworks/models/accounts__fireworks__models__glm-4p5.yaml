@@ -1,0 +1,21 @@
+name: "accounts/fireworks/models/glm-4p5"
+display_name: "GLM-4.5 (Fireworks)"
+family: "glm"
+status: "stable"
+
+cost:
+  input_per_1k: 0.00055
+  output_per_1k: 0.00219
+
+limits:
+  max_tokens: 131072
+  max_completion_tokens: 131072
+
+capabilities:
+  - chat
+  - function_calling
+  - reasoning
+
+modalities:
+  input: ["text"]
+  output: ["text"]

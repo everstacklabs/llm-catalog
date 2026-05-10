@@ -1,0 +1,20 @@
+name: "mistralai/mistral-large"
+display_name: "Mistral Large"
+family: "mistral"
+status: "stable"
+
+cost:
+  input_per_1k: 0.003
+  output_per_1k: 0.009
+
+limits:
+  max_tokens: 128000
+  max_completion_tokens: 32768
+
+capabilities:
+  - chat
+  - function_calling
+
+modalities:
+  input: ["text"]
+  output: ["text"]

@@ -1,0 +1,23 @@
+name: "gemini-3-flash-preview"
+display_name: "Gemini 3 Flash (Preview)"
+family: "gemini-3"
+status: "preview"
+
+cost:
+  input_per_1k: 0.0005
+  output_per_1k: 0.003
+  cache_read_per_1k: 0.00005
+
+limits:
+  max_tokens: 1048576
+  max_completion_tokens: 65536
+
+capabilities:
+  - chat
+  - vision
+  - function_calling
+  - reasoning
+
+modalities:
+  input: ["text", "image", "video", "audio", "pdf"]
+  output: ["text"]

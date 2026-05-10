@@ -1,11 +1,13 @@
-name: "claude-opus-4-0-20250514"
-display_name: "Claude Opus 4.0"
+name: "anthropic.claude-opus-4-1-20250805-v1:0"
+display_name: "Claude Opus 4.1 (Bedrock)"
 family: "claude-4"
 status: "stable"
 
 cost:
   input_per_1k: 0.015
   output_per_1k: 0.075
+  cache_read_per_1k: 0.0015
+  cache_write_per_1k: 0.01875
 
 limits:
   max_tokens: 200000
@@ -16,9 +18,7 @@ capabilities:
   - function_calling
   - vision
   - extended_thinking
-  - computer_use
 
 modalities:
-  input: ["text", "image"]
+  input: ["text", "image", "pdf"]
   output: ["text"]
-

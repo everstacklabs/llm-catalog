@@ -8,7 +8,7 @@ cost:
   output_per_1k: 0.015
 
 limits:
-  max_tokens: 200000
+  max_tokens: 1000000
   max_completion_tokens: 64000
 
 capabilities:
@@ -19,8 +19,7 @@ capabilities:
   - computer_use
 
 modalities:
-  input: ["text", "image"]
+  input: ["text", "image", "pdf"]
   output: ["text"]
 
-notes: "Alias that always points to the latest Claude Sonnet 4 version"
-
+notes: "Alias that always points to the latest Claude Sonnet 4.x version (currently Claude Sonnet 4.6)"

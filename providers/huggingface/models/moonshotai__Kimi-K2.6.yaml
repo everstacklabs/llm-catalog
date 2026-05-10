@@ -1,0 +1,23 @@
+name: "moonshotai/Kimi-K2.6"
+display_name: "Kimi K2.6 (HF)"
+family: "kimi"
+status: "stable"
+
+cost:
+  input_per_1k: 0.00095
+  output_per_1k: 0.004
+  cache_read_per_1k: 0.00016
+
+limits:
+  max_tokens: 262144
+  max_completion_tokens: 262144
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text", "image", "video"]
+  output: ["text"]

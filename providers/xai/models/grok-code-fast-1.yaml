@@ -1,0 +1,22 @@
+name: "grok-code-fast-1"
+display_name: "Grok Code Fast"
+family: "grok"
+status: "stable"
+
+cost:
+  input_per_1k: 0.0002
+  output_per_1k: 0.0015
+
+limits:
+  max_tokens: 256000
+  max_completion_tokens: 10000
+
+capabilities:
+  - chat
+  - function_calling
+  - reasoning
+  - coding
+
+modalities:
+  input: ["text"]
+  output: ["text"]

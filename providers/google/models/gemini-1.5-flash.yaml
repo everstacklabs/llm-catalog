@@ -6,6 +6,7 @@ status: "stable"
 cost:
   input_per_1k: 0.000075
   output_per_1k: 0.0003
+  cache_read_per_1k: 0.00001875
 
 limits:
   max_tokens: 1048576

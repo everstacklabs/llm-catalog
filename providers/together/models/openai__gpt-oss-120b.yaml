@@ -1,0 +1,21 @@
+name: "openai/gpt-oss-120b"
+display_name: "GPT OSS 120B (Together)"
+family: "gpt-oss"
+status: "stable"
+
+cost:
+  input_per_1k: 0.00015
+  output_per_1k: 0.0006
+
+limits:
+  max_tokens: 131072
+  max_completion_tokens: 32768
+
+capabilities:
+  - chat
+  - function_calling
+  - reasoning
+
+modalities:
+  input: ["text"]
+  output: ["text"]

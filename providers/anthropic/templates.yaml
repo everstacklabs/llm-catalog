@@ -42,5 +42,7 @@ coding:
     temperature: 0.2
     max_tokens: 4096
   recommended_models:
-    - claude-3-5-sonnet-20241022
-    - claude-sonnet-4-20250514
+    - claude-opus-4-7
+    - claude-sonnet-4-6
+    - claude-sonnet-4-5-20250929
+    - claude-opus-4-5-20251101

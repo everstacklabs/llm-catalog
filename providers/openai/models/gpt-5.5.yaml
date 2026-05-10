@@ -1,0 +1,25 @@
+name: "gpt-5.5"
+display_name: "GPT-5.5"
+family: "gpt-5"
+status: "stable"
+
+cost:
+  input_per_1k: 0.005
+  output_per_1k: 0.03
+  cache_read_per_1k: 0.0005
+
+limits:
+  max_tokens: 1050000
+  max_completion_tokens: 128000
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text", "image", "pdf"]
+  output: ["text"]
+
+notes: "Pricing doubles for context > 200K tokens; flagship released 2026-04-23"

@@ -1,0 +1,24 @@
+name: "anthropic/claude-sonnet-4.6"
+display_name: "Claude Sonnet 4.6 (OR)"
+family: "claude-4"
+status: "stable"
+
+cost:
+  input_per_1k: 0.003
+  output_per_1k: 0.015
+  cache_read_per_1k: 0.0003
+  cache_write_per_1k: 0.00375
+
+limits:
+  max_tokens: 1000000
+  max_completion_tokens: 128000
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text", "image"]
+  output: ["text"]

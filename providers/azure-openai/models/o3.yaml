@@ -1,0 +1,23 @@
+name: "o3"
+display_name: "o3 (Azure)"
+family: "o-series"
+status: "stable"
+
+cost:
+  input_per_1k: 0.002
+  output_per_1k: 0.008
+  cache_read_per_1k: 0.0005
+
+limits:
+  max_tokens: 200000
+  max_completion_tokens: 100000
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text", "image"]
+  output: ["text"]

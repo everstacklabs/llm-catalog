@@ -1,0 +1,24 @@
+name: "gpt-5-codex"
+display_name: "GPT-5 Codex (Azure)"
+family: "gpt-5"
+status: "stable"
+
+cost:
+  input_per_1k: 0.00125
+  output_per_1k: 0.01
+  cache_read_per_1k: 0.000125
+
+limits:
+  max_tokens: 400000
+  max_completion_tokens: 128000
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+  - coding
+
+modalities:
+  input: ["text", "image"]
+  output: ["text"]

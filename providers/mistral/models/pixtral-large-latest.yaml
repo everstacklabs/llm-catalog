@@ -1,0 +1,21 @@
+name: pixtral-large-latest
+display_name: Pixtral Large
+family: pixtral
+status: stable
+
+cost:
+  input_per_1k: 0.002
+  output_per_1k: 0.006
+
+limits:
+  max_tokens: 128000
+  max_completion_tokens: 128000
+
+capabilities:
+  - chat
+  - vision
+  - function_calling
+
+modalities:
+  input: [text, image]
+  output: [text]

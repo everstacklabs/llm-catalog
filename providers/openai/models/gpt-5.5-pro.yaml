@@ -1,0 +1,22 @@
+name: "gpt-5.5-pro"
+display_name: "GPT-5.5 Pro"
+family: "gpt-5"
+status: "stable"
+
+cost:
+  input_per_1k: 0.03
+  output_per_1k: 0.18
+
+limits:
+  max_tokens: 1050000
+  max_completion_tokens: 128000
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text", "image", "pdf"]
+  output: ["text"]

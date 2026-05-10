@@ -4,16 +4,17 @@ family: "minimax-m2.1"
 status: "stable"
 
 cost:
-  input_per_1k: 0.0015
-  output_per_1k: 0.005
+  input_per_1k: 0.0003
+  output_per_1k: 0.0012
 
 limits:
-  max_tokens: 200000
-  max_completion_tokens: 128000
+  max_tokens: 204800
+  max_completion_tokens: 131072
 
 capabilities:
   - chat
   - function_calling
+  - reasoning
 
 modalities:
   input: ["text"]

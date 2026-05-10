@@ -1,0 +1,21 @@
+name: "openai/gpt-oss-20b"
+display_name: "GPT OSS 20B (Groq)"
+family: "gpt-oss"
+status: "stable"
+
+cost:
+  input_per_1k: 0.000075
+  output_per_1k: 0.0003
+
+limits:
+  max_tokens: 131072
+  max_completion_tokens: 65536
+
+capabilities:
+  - chat
+  - function_calling
+  - reasoning
+
+modalities:
+  input: ["text"]
+  output: ["text"]

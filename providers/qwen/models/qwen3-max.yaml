@@ -4,12 +4,12 @@ family: "qwen3-commercial"
 status: "stable"
 
 cost:
-  input_per_1k: 0.002
+  input_per_1k: 0.0012
   output_per_1k: 0.006
 
 limits:
   max_tokens: 262144
-  max_completion_tokens: 16384
+  max_completion_tokens: 65536
 
 capabilities:
   - chat

@@ -1,0 +1,22 @@
+name: "google/gemini-3-pro-preview"
+display_name: "Gemini 3 Pro (Preview, OR)"
+family: "gemini-3"
+status: "preview"
+
+cost:
+  input_per_1k: 0.002
+  output_per_1k: 0.012
+
+limits:
+  max_tokens: 1050000
+  max_completion_tokens: 66000
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text", "image", "audio", "video", "pdf"]
+  output: ["text"]

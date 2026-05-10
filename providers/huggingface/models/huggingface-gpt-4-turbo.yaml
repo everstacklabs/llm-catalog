@@ -1,7 +1,7 @@
 name: "huggingface/gpt-4-turbo"
 display_name: "GPT-4 Turbo"
 family: "gpt-4"
-status: "stable"
+status: "deprecated"
 
 cost:
   input_per_1k: 0.01

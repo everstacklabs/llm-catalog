@@ -1,0 +1,21 @@
+name: "deepseek-r1-distill-llama-70b"
+display_name: "DeepSeek R1 Distill Llama 70B"
+family: "deepseek"
+status: "stable"
+
+cost:
+  input_per_1k: 0.00075
+  output_per_1k: 0.00099
+
+limits:
+  max_tokens: 131072
+  max_completion_tokens: 32768
+
+capabilities:
+  - chat
+  - function_calling
+  - reasoning
+
+modalities:
+  input: ["text"]
+  output: ["text"]

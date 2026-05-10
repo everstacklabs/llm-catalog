@@ -9,7 +9,7 @@ cost:
 
 limits:
   max_tokens: 200000
-  max_completion_tokens: 128000
+  max_completion_tokens: 64000
 
 capabilities:
   - chat

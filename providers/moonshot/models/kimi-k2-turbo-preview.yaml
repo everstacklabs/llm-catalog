@@ -4,12 +4,12 @@ family: "kimi-k2"
 status: "stable"
 
 cost:
-  input_per_1k: 0.00115
-  output_per_1k: 0.008
+  input_per_1k: 0.0024
+  output_per_1k: 0.01
 
 limits:
   max_tokens: 262144
-  max_completion_tokens: 16384
+  max_completion_tokens: 262144
 
 capabilities:
   - chat

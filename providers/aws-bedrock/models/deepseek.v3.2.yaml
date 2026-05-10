@@ -1,0 +1,21 @@
+name: "deepseek.v3.2"
+display_name: "DeepSeek V3.2 (Bedrock)"
+family: "deepseek"
+status: "stable"
+
+cost:
+  input_per_1k: 0.00062
+  output_per_1k: 0.00185
+
+limits:
+  max_tokens: 163840
+  max_completion_tokens: 81920
+
+capabilities:
+  - chat
+  - function_calling
+  - reasoning
+
+modalities:
+  input: ["text"]
+  output: ["text"]

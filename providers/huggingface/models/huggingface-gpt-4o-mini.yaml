@@ -1,7 +1,7 @@
 name: "huggingface/gpt-4o-mini"
 display_name: "GPT-4o Mini"
 family: "gpt-4"
-status: "stable"
+status: "deprecated"
 
 cost:
   input_per_1k: 0.00015

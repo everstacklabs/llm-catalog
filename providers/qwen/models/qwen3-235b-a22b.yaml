@@ -4,16 +4,17 @@ family: "qwen3"
 status: "stable"
 
 cost:
-  input_per_1k: 0.0008
-  output_per_1k: 0.002
+  input_per_1k: 0.0007
+  output_per_1k: 0.0028
 
 limits:
   max_tokens: 131072
-  max_completion_tokens: 8192
+  max_completion_tokens: 16384
 
 capabilities:
   - chat
   - function_calling
+  - reasoning
 
 modalities:
   input: ["text"]

@@ -1,7 +1,7 @@
 name: "huggingface/text-embedding-ada-002"
 display_name: "Text Embedding Ada 002"
 family: "embedding"
-status: "stable"
+status: "deprecated"
 
 cost:
   input_per_1k: 0.0001

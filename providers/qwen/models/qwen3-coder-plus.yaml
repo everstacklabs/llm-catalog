@@ -1,0 +1,21 @@
+name: "qwen3-coder-plus"
+display_name: "Qwen3 Coder Plus"
+family: "qwen3-commercial"
+status: "stable"
+
+cost:
+  input_per_1k: 0.001
+  output_per_1k: 0.005
+
+limits:
+  max_tokens: 1048576
+  max_completion_tokens: 65536
+
+capabilities:
+  - chat
+  - function_calling
+  - coding
+
+modalities:
+  input: ["text"]
+  output: ["text"]

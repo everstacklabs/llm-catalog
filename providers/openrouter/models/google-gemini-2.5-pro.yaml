@@ -1,0 +1,21 @@
+name: "google/gemini-2.5-pro"
+display_name: "Gemini 2.5 Pro"
+family: "gemini"
+status: "stable"
+
+cost:
+  input_per_1k: 0.0035
+  output_per_1k: 0.0105
+
+limits:
+  max_tokens: 1048576
+  max_completion_tokens: 65536
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+
+modalities:
+  input: ["text", "image", "audio", "video"]
+  output: ["text"]

@@ -1,0 +1,20 @@
+name: "moonshotai/kimi-k2-instruct-0905"
+display_name: "Kimi K2 Instruct 0905 (Groq)"
+family: "kimi"
+status: "stable"
+
+cost:
+  input_per_1k: 0.001
+  output_per_1k: 0.003
+
+limits:
+  max_tokens: 262144
+  max_completion_tokens: 16384
+
+capabilities:
+  - chat
+  - function_calling
+
+modalities:
+  input: ["text"]
+  output: ["text"]

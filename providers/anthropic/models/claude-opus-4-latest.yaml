@@ -4,12 +4,12 @@ family: "claude-4"
 status: "stable"
 
 cost:
-  input_per_1k: 0.015
-  output_per_1k: 0.075
+  input_per_1k: 0.005
+  output_per_1k: 0.025
 
 limits:
-  max_tokens: 200000
-  max_completion_tokens: 32000
+  max_tokens: 1000000
+  max_completion_tokens: 128000
 
 capabilities:
   - chat
@@ -19,8 +19,7 @@ capabilities:
   - computer_use
 
 modalities:
-  input: ["text", "image"]
+  input: ["text", "image", "pdf"]
   output: ["text"]
 
-notes: "Alias that always points to the latest Claude Opus 4 version"
-
+notes: "Alias that always points to the latest Claude Opus 4.x version (currently Claude Opus 4.7)"

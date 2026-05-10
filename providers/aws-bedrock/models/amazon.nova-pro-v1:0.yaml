@@ -1,0 +1,22 @@
+name: "amazon.nova-pro-v1:0"
+display_name: "Amazon Nova Pro"
+family: "nova"
+status: "stable"
+
+cost:
+  input_per_1k: 0.0008
+  output_per_1k: 0.0032
+  cache_read_per_1k: 0.0002
+
+limits:
+  max_tokens: 300000
+  max_completion_tokens: 8192
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+
+modalities:
+  input: ["text", "image"]
+  output: ["text"]

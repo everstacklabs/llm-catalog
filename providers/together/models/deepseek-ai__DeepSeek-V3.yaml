@@ -1,0 +1,20 @@
+name: "deepseek-ai/DeepSeek-V3"
+display_name: "DeepSeek V3"
+family: "deepseek"
+status: "deprecated"
+
+cost:
+  input_per_1k: 0.00125
+  output_per_1k: 0.00125
+
+limits:
+  max_tokens: 131072
+  max_completion_tokens: 16384
+
+capabilities:
+  - chat
+  - function_calling
+
+modalities:
+  input: ["text"]
+  output: ["text"]

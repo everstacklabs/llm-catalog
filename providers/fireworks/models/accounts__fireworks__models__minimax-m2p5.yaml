@@ -1,0 +1,21 @@
+name: "accounts/fireworks/models/minimax-m2p5"
+display_name: "MiniMax M2.5 (Fireworks)"
+family: "minimax"
+status: "stable"
+
+cost:
+  input_per_1k: 0.0003
+  output_per_1k: 0.0012
+
+limits:
+  max_tokens: 196608
+  max_completion_tokens: 196608
+
+capabilities:
+  - chat
+  - function_calling
+  - reasoning
+
+modalities:
+  input: ["text"]
+  output: ["text"]

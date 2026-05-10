@@ -1,0 +1,20 @@
+name: "x-ai/grok-3-beta"
+display_name: "Grok 3 Beta"
+family: "grok"
+status: "preview"
+
+cost:
+  input_per_1k: 0.003
+  output_per_1k: 0.015
+
+limits:
+  max_tokens: 131072
+  max_completion_tokens: 32768
+
+capabilities:
+  - chat
+  - function_calling
+
+modalities:
+  input: ["text"]
+  output: ["text"]
