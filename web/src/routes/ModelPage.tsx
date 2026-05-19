@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { lazy, Suspense, useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import {
   findModel,
@@ -14,9 +14,16 @@ import { ProviderLogo } from "../components/ProviderLogo";
 import { Badge } from "../components/Badge";
 import { formatCostPerMillion, formatDate, formatTokens, titleCase } from "../lib/format";
 
+const ModelActivity = lazy(() =>
+  import("../components/ModelActivity").then((m) => ({ default: m.ModelActivity })),
+);
+
+type Tab = "overview" | "activity" | "api";
+
 export function ModelPage() {
   const { provider: providerSlug = "", model: modelSlug = "" } = useParams();
   const [catalog, setCatalog] = useState<Catalog | null>(null);
+  const [tab, setTab] = useState<Tab>("overview");
 
   useEffect(() => {
     loadCatalog().then(setCatalog);
@@ -92,91 +99,130 @@ export function ModelPage() {
         />
       </div>
 
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-        <Section title="Capabilities" className="lg:col-span-2">
-          {capabilities.length === 0 ? (
-            <Empty>No capabilities listed.</Empty>
-          ) : (
-            <div className="flex flex-wrap gap-2">
-              {capabilities.map((c) => (
-                <Badge key={c} tone="accent" className="px-2 py-1 text-xs">
-                  {titleCase(c)}
-                </Badge>
-              ))}
-            </div>
-          )}
-        </Section>
+      <Tabs current={tab} onChange={setTab} />
 
-        <Section title="Modalities">
-          <div className="flex flex-col gap-3 text-sm">
-            <div>
-              <div className="mb-1 text-xs uppercase tracking-wider text-muted">Input</div>
-              <div className="flex flex-wrap gap-1">
-                {inputMods.length ? (
-                  inputMods.map((m) => <Badge key={m}>{m}</Badge>)
-                ) : (
-                  <span className="text-muted">—</span>
-                )}
-              </div>
-            </div>
-            <div>
-              <div className="mb-1 text-xs uppercase tracking-wider text-muted">Output</div>
-              <div className="flex flex-wrap gap-1">
-                {outputMods.length ? (
-                  outputMods.map((m) => <Badge key={m}>{m}</Badge>)
-                ) : (
-                  <span className="text-muted">—</span>
-                )}
-              </div>
-            </div>
-          </div>
-        </Section>
+      {tab === "overview" && (
+        <>
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+            <Section title="Capabilities" className="lg:col-span-2">
+              {capabilities.length === 0 ? (
+                <Empty>No capabilities listed.</Empty>
+              ) : (
+                <div className="flex flex-wrap gap-2">
+                  {capabilities.map((c) => (
+                    <Badge key={c} tone="accent" className="px-2 py-1 text-xs">
+                      {titleCase(c)}
+                    </Badge>
+                  ))}
+                </div>
+              )}
+            </Section>
 
-        <Section title="Pricing breakdown" className="lg:col-span-2">
-          <PricingTable model={model} />
-        </Section>
-
-        <Section title="Details">
-          <dl className="divide-y text-sm">
-            <DataRow label="Model ID" value={<code className="font-mono text-xs">{model.slug}</code>} />
-            <DataRow label="Family" value={model.family || "—"} />
-            <DataRow label="Status" value={model.status || "stable"} />
-            <DataRow label="Knowledge cutoff" value={formatDate(model.knowledge_cutoff)} />
-            <DataRow label="Release date" value={formatDate(model.release_date)} />
-          </dl>
-        </Section>
-      </div>
-
-      <Section title="Usage example">
-        <UsageExample provider={provider} model={model} />
-      </Section>
-
-      {related.length > 0 && (
-        <Section title={`More from ${providerDisplayName(provider)}`}>
-          <div className="grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3">
-            {related.map((m) => (
-              <Link
-                key={m.slug}
-                to={`/${provider.slug}/${m.slug}`}
-                className="flex items-center gap-3 rounded-xl border bg-surface p-3 transition hover:border-zinc-300 hover:shadow-sm"
-              >
-                <ProviderLogo
-                  slug={provider.slug}
-                  displayName={providerDisplayName(provider)}
-                  size={28}
-                />
-                <div className="min-w-0">
-                  <div className="truncate text-sm font-medium">{modelDisplayName(m)}</div>
-                  <div className="truncate text-xs text-muted">
-                    {formatTokens(m.limits?.max_tokens)} ctx ·{" "}
-                    {formatCostPerMillion(m.cost?.input_per_1k)} in
+            <Section title="Modalities">
+              <div className="flex flex-col gap-3 text-sm">
+                <div>
+                  <div className="mb-1 text-xs uppercase tracking-wider text-muted">Input</div>
+                  <div className="flex flex-wrap gap-1">
+                    {inputMods.length ? (
+                      inputMods.map((m) => <Badge key={m}>{m}</Badge>)
+                    ) : (
+                      <span className="text-muted">—</span>
+                    )}
                   </div>
                 </div>
-              </Link>
-            ))}
+                <div>
+                  <div className="mb-1 text-xs uppercase tracking-wider text-muted">Output</div>
+                  <div className="flex flex-wrap gap-1">
+                    {outputMods.length ? (
+                      outputMods.map((m) => <Badge key={m}>{m}</Badge>)
+                    ) : (
+                      <span className="text-muted">—</span>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </Section>
+
+            <Section title="Pricing breakdown" className="lg:col-span-2">
+              <PricingTable model={model} />
+            </Section>
+
+            <Section title="Details">
+              <dl className="divide-y text-sm">
+                <DataRow label="Model ID" value={<code className="font-mono text-xs">{model.slug}</code>} />
+                <DataRow label="Family" value={model.family || "—"} />
+                <DataRow label="Status" value={model.status || "stable"} />
+                <DataRow label="Knowledge cutoff" value={formatDate(model.knowledge_cutoff)} />
+                <DataRow label="Release date" value={formatDate(model.release_date)} />
+              </dl>
+            </Section>
           </div>
+
+          {related.length > 0 && (
+            <Section title={`More from ${providerDisplayName(provider)}`}>
+              <div className="grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3">
+                {related.map((m) => (
+                  <Link
+                    key={m.slug}
+                    to={`/${provider.slug}/${m.slug}`}
+                    className="flex items-center gap-3 rounded-xl border bg-surface p-3 transition hover:border-zinc-300 hover:shadow-sm"
+                  >
+                    <ProviderLogo
+                      slug={provider.slug}
+                      displayName={providerDisplayName(provider)}
+                      size={28}
+                    />
+                    <div className="min-w-0">
+                      <div className="truncate text-sm font-medium">{modelDisplayName(m)}</div>
+                      <div className="truncate text-xs text-muted">
+                        {formatTokens(m.limits?.max_tokens)} ctx ·{" "}
+                        {formatCostPerMillion(m.cost?.input_per_1k)} in
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </Section>
+          )}
+        </>
+      )}
+
+      {tab === "activity" && (
+        <Suspense fallback={<div className="py-12 text-center text-sm text-muted">Loading charts…</div>}>
+          <ModelActivity provider={provider.slug} slug={model.slug} />
+        </Suspense>
+      )}
+
+      {tab === "api" && (
+        <Section title="Usage example">
+          <UsageExample provider={provider} model={model} />
         </Section>
       )}
+    </div>
+  );
+}
+
+function Tabs({ current, onChange }: { current: Tab; onChange: (t: Tab) => void }) {
+  const tabs: Array<{ key: Tab; label: string }> = [
+    { key: "overview", label: "Overview" },
+    { key: "activity", label: "Activity" },
+    { key: "api", label: "API" },
+  ];
+  return (
+    <div className="flex gap-1 border-b">
+      {tabs.map((t) => (
+        <button
+          key={t.key}
+          onClick={() => onChange(t.key)}
+          className={`-mb-px border-b-2 px-3 py-2 text-sm font-medium transition ${
+            current === t.key
+              ? "border-zinc-900 text-zinc-900"
+              : "border-transparent text-muted hover:text-zinc-900"
+          }`}
+        >
+          {t.label}
+        </button>
+      ))}
     </div>
   );
 }
