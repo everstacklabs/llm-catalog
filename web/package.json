@@ -11,6 +11,7 @@
     "build-catalog": "node scripts/build-catalog.mjs"
   },
   "dependencies": {
+    "@lobehub/icons": "^5.8.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.0.0"

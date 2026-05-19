@@ -7,7 +7,7 @@ import {
   type Catalog,
   type CatalogProvider,
 } from "../lib/catalog";
-import { ProviderIcon } from "../components/ProviderIcon";
+import { ProviderLogo } from "../components/ProviderLogo";
 import { Badge } from "../components/Badge";
 import { ModelCard } from "../components/ModelCard";
 
@@ -62,7 +62,7 @@ export function ProviderPage() {
       <Breadcrumb provider={provider} />
 
       <header className="flex flex-col gap-5 sm:flex-row sm:items-start">
-        <ProviderIcon slug={provider.slug} displayName={providerDisplayName(provider)} size={64} />
+        <ProviderLogo slug={provider.slug} displayName={providerDisplayName(provider)} size={64} />
         <div className="flex flex-1 flex-col gap-2">
           <div className="flex items-center gap-2">
             <h1 className="text-3xl font-semibold tracking-tight">

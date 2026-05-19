@@ -10,7 +10,7 @@ import {
   type CatalogModel,
   type CatalogProvider,
 } from "../lib/catalog";
-import { ProviderIcon } from "../components/ProviderIcon";
+import { ProviderLogo } from "../components/ProviderLogo";
 import { Badge } from "../components/Badge";
 import { formatCostPerMillion, formatDate, formatTokens, titleCase } from "../lib/format";
 
@@ -47,7 +47,7 @@ export function ModelPage() {
       <Breadcrumb provider={provider} model={model} />
 
       <header className="flex flex-col gap-5 sm:flex-row sm:items-start">
-        <ProviderIcon slug={provider.slug} displayName={providerDisplayName(provider)} size={64} />
+        <ProviderLogo slug={provider.slug} displayName={providerDisplayName(provider)} size={64} />
         <div className="flex flex-1 flex-col gap-2">
           <div className="flex flex-wrap items-center gap-2">
             <h1 className="text-3xl font-semibold tracking-tight">{modelDisplayName(model)}</h1>
@@ -160,7 +160,7 @@ export function ModelPage() {
                 to={`/${provider.slug}/${m.slug}`}
                 className="flex items-center gap-3 rounded-xl border bg-surface p-3 transition hover:border-zinc-300 hover:shadow-sm"
               >
-                <ProviderIcon
+                <ProviderLogo
                   slug={provider.slug}
                   displayName={providerDisplayName(provider)}
                   size={28}

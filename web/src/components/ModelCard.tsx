@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import type { CatalogModel } from "../lib/catalog";
 import { modelDisplayName } from "../lib/catalog";
 import { formatCostPerMillion, formatTokens } from "../lib/format";
-import { ProviderIcon } from "./ProviderIcon";
+import { ProviderLogo } from "./ProviderLogo";
 import { Badge } from "./Badge";
 
 interface Props {
@@ -24,7 +24,7 @@ export function ModelCard({ model, providerDisplayName }: Props) {
       className="group flex flex-col gap-3 rounded-xl border bg-surface p-4 transition hover:border-zinc-300 hover:shadow-sm"
     >
       <div className="flex items-start gap-3">
-        <ProviderIcon slug={model.provider} displayName={providerDisplayName} size={36} />
+        <ProviderLogo slug={model.provider} displayName={providerDisplayName} size={36} />
         <div className="min-w-0 flex-1">
           <div className="truncate font-medium text-zinc-900 group-hover:text-blue-700">
             {modelDisplayName(model)}

@@ -1,17 +1,18 @@
 import { Link, NavLink, Outlet } from "react-router-dom";
+import { GlobalSearch } from "../components/GlobalSearch";
 
 export function Layout() {
   return (
     <div className="flex min-h-full flex-col">
-      <header className="sticky top-0 z-10 border-b bg-surface/80 backdrop-blur">
+      <header className="sticky top-0 z-20 border-b bg-surface/80 backdrop-blur">
         <div className="mx-auto flex h-14 max-w-7xl items-center gap-6 px-6">
-          <Link to="/" className="flex items-center gap-2 font-semibold tracking-tight">
+          <Link to="/" className="flex shrink-0 items-center gap-2 font-semibold tracking-tight">
             <span className="grid size-7 place-items-center rounded-md bg-zinc-900 text-xs font-bold text-white">
               LC
             </span>
-            <span>Model Catalog</span>
+            <span className="hidden sm:inline">Model Catalog</span>
           </Link>
-          <nav className="flex items-center gap-1 text-sm">
+          <nav className="flex shrink-0 items-center gap-1 text-sm">
             <NavLink
               to="/"
               end
@@ -26,12 +27,13 @@ export function Layout() {
               All Models
             </NavLink>
           </nav>
-          <div className="ml-auto flex items-center gap-3 text-xs text-muted">
+          <div className="ml-auto flex flex-1 items-center justify-end gap-3">
+            <GlobalSearch variant="header" />
             <a
               href="https://github.com/everstacklabs/llm-catalog"
               target="_blank"
               rel="noreferrer"
-              className="hover:text-zinc-900"
+              className="shrink-0 text-xs text-muted hover:text-zinc-900"
             >
               GitHub
             </a>

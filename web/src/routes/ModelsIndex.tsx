@@ -8,7 +8,7 @@ import {
   type CatalogProvider,
 } from "../lib/catalog";
 import { ModelCard } from "../components/ModelCard";
-import { ProviderIcon } from "../components/ProviderIcon";
+import { ProviderLogo } from "../components/ProviderLogo";
 import { FilterSection, FilterCheckbox } from "../components/FilterSection";
 
 interface Filters {
@@ -290,7 +290,7 @@ function ProviderStrip({ catalog }: { catalog: Catalog }) {
           to={`/${p.slug}`}
           className="flex shrink-0 items-center gap-2 rounded-full border bg-surface px-3 py-1.5 text-sm transition hover:border-zinc-300 hover:shadow-sm"
         >
-          <ProviderIcon slug={p.slug} displayName={providerDisplayName(p)} size={20} />
+          <ProviderLogo slug={p.slug} displayName={providerDisplayName(p)} size={20} />
           <span>{providerDisplayName(p)}</span>
           <span className="text-xs tabular-nums text-muted">{p.models.length}</span>
         </Link>
