@@ -57,7 +57,7 @@ export function ModelPage() {
         <ProviderLogo slug={provider.slug} displayName={providerDisplayName(provider)} size={64} />
         <div className="flex flex-1 flex-col gap-2">
           <div className="flex flex-wrap items-center gap-2">
-            <h1 className="text-3xl font-semibold tracking-tight">{modelDisplayName(model)}</h1>
+            <h1 className="text-3xl font-medium tracking-tight">{modelDisplayName(model)}</h1>
             <StatusBadge status={model.status} />
             {model.family && <Badge>{model.family}</Badge>}
           </div>
@@ -259,7 +259,7 @@ function Section({
 }) {
   return (
     <section className={`flex flex-col gap-3 rounded-xl border bg-surface p-5 ${className}`}>
-      <h2 className="text-sm font-semibold uppercase tracking-wider text-muted">{title}</h2>
+      <h2 className="text-xs font-medium uppercase tracking-wider text-muted">{title}</h2>
       {children}
     </section>
   );
@@ -269,7 +269,7 @@ function KpiTile({ label, value, sub }: { label: string; value: string; sub?: st
   return (
     <div className="flex flex-col gap-1 rounded-xl border bg-surface p-4">
       <div className="text-xs uppercase tracking-wider text-muted">{label}</div>
-      <div className="text-2xl font-semibold tabular-nums tracking-tight">{value}</div>
+      <div className="text-2xl font-medium tabular-nums tracking-tight">{value}</div>
       {sub && <div className="text-xs text-muted">{sub}</div>}
     </div>
   );

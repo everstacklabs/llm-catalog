@@ -125,7 +125,7 @@ export function ModelsIndex() {
         <aside className="hidden lg:block">
           <div className="sticky top-20 rounded-xl border bg-surface p-4">
             <div className="mb-2 flex items-center justify-between">
-              <h2 className="text-sm font-semibold">Filters</h2>
+              <h2 className="text-sm font-medium">Filters</h2>
               {activeCount > 0 && (
                 <button
                   onClick={() => setFilters(emptyFilters())}
@@ -258,7 +258,7 @@ export function ModelsIndex() {
 function Hero({ catalog }: { catalog: Catalog }) {
   return (
     <div className="flex flex-col gap-3">
-      <h1 className="text-3xl font-semibold tracking-tight">Model Catalog</h1>
+      <h1 className="text-3xl font-medium tracking-tight">Model Catalog</h1>
       <p className="max-w-2xl text-muted">
         Browse every model and provider configured in the catalog. Pricing, context windows,
         capabilities, and modalities. Synced from the source-of-truth YAML.

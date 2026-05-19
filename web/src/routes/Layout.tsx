@@ -6,8 +6,8 @@ export function Layout() {
     <div className="flex min-h-full flex-col">
       <header className="sticky top-0 z-20 border-b bg-surface/80 backdrop-blur">
         <div className="mx-auto flex h-14 max-w-7xl items-center gap-6 px-6">
-          <Link to="/" className="flex shrink-0 items-center gap-2 font-semibold tracking-tight">
-            <span className="grid size-7 place-items-center rounded-md bg-zinc-900 text-xs font-bold text-white">
+          <Link to="/" className="flex shrink-0 items-center gap-2 font-medium tracking-tight">
+            <span className="grid size-7 place-items-center rounded-md bg-zinc-900 text-xs font-semibold text-white">
               LC
             </span>
             <span className="hidden sm:inline">Model Catalog</span>

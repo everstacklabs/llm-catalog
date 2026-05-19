@@ -65,7 +65,7 @@ export function ProviderPage() {
         <ProviderLogo slug={provider.slug} displayName={providerDisplayName(provider)} size={64} />
         <div className="flex flex-1 flex-col gap-2">
           <div className="flex items-center gap-2">
-            <h1 className="text-3xl font-semibold tracking-tight">
+            <h1 className="text-3xl font-medium tracking-tight">
               {providerDisplayName(provider)}
             </h1>
             {provider.provider_type && (
@@ -267,7 +267,7 @@ function DataCard({
 }) {
   return (
     <div className={`rounded-xl border bg-surface ${className}`}>
-      <div className="border-b px-4 py-3 text-sm font-semibold">{title}</div>
+      <div className="border-b px-4 py-3 text-sm font-medium">{title}</div>
       <dl className="divide-y text-sm">
         {Object.entries(data).map(([k, v]) => (
           <div key={k} className="flex items-start gap-4 px-4 py-2">

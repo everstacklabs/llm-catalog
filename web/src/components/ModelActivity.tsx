@@ -51,7 +51,7 @@ export function ModelActivity({ provider, slug }: Props) {
     <div className="flex flex-col gap-5">
       <div className="flex items-start justify-between gap-3">
         <div>
-          <h2 className="text-base font-semibold">Usage activity</h2>
+          <h2 className="text-base font-medium">Usage activity</h2>
           <p className="text-xs text-muted">
             Aggregated from gateway logs. Mock data shown until the es-core metrics endpoint ships.
           </p>
@@ -183,7 +183,7 @@ function Tile({
         {dot && <span className={`size-1.5 rounded-full ${dot}`} aria-hidden />}
         {label}
       </div>
-      <div className="text-2xl font-semibold tabular-nums tracking-tight">{value}</div>
+      <div className="text-2xl font-medium tabular-nums tracking-tight">{value}</div>
     </div>
   );
 }

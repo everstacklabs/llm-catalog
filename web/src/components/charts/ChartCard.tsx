@@ -13,7 +13,7 @@ export function ChartCard({ title, subtitle, right, children, className = "" }: 
     <div className={`flex flex-col gap-3 rounded-xl border bg-surface p-5 ${className}`}>
       <div className="flex items-start justify-between gap-4">
         <div>
-          <h3 className="text-sm font-semibold">{title}</h3>
+          <h3 className="text-sm font-medium">{title}</h3>
           {subtitle && <div className="mt-0.5 text-xs text-muted">{subtitle}</div>}
         </div>
         {right}
