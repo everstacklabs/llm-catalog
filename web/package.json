@@ -4,11 +4,11 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "prebuild-catalog": "node scripts/build-catalog.mjs",
-    "dev": "npm run prebuild-catalog && vite",
-    "build": "npm run prebuild-catalog && tsc -b && vite build",
+    "prebuild-catalog": "bun scripts/build-catalog.mjs",
+    "dev": "bun run prebuild-catalog && vite",
+    "build": "bun run prebuild-catalog && tsc -b && vite build",
     "preview": "vite preview",
-    "build-catalog": "node scripts/build-catalog.mjs"
+    "build-catalog": "bun scripts/build-catalog.mjs"
   },
   "dependencies": {
     "@lobehub/icons": "^5.8.0",

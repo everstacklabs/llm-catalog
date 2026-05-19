@@ -10,17 +10,19 @@ A Vite + React Router dashboard that browses the model catalog defined in `../pr
 
 ## Develop
 
+This project uses [Bun](https://bun.com) for package management and as the script runner.
+
 ```bash
 cd web
-npm install
-npm run dev
+bun install
+bun run dev
 ```
 
-The `dev` and `build` scripts run `scripts/build-catalog.mjs` first, which walks `../providers/` and writes `public/catalog.json` for the frontend to fetch at runtime. Re-run `npm run build-catalog` whenever the YAML sources change.
+The `dev` and `build` scripts run `scripts/build-catalog.mjs` first, which walks `../providers/` and writes `public/catalog.json` for the frontend to fetch at runtime. Re-run `bun run build-catalog` whenever the YAML sources change.
 
 ## Build
 
 ```bash
-npm run build
-npm run preview
+bun run build
+bun run preview
 ```
