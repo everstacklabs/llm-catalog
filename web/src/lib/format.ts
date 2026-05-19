@@ -1,5 +1,5 @@
 export function formatTokens(n?: number): string {
-  if (n == null) return "—";
+  if (n == null) return "-";
   if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(n % 1_000_000 === 0 ? 0 : 1)}M`;
   if (n >= 1_000) return `${(n / 1_000).toFixed(n % 1_000 === 0 ? 0 : 1)}K`;
   return String(n);
@@ -7,7 +7,7 @@ export function formatTokens(n?: number): string {
 
 // Cost arrives as USD per 1K tokens. Most catalogs display per 1M tokens.
 export function formatCostPerMillion(per1k?: number): string {
-  if (per1k == null) return "—";
+  if (per1k == null) return "-";
   const per1m = per1k * 1000;
   if (per1m >= 100) return `$${per1m.toFixed(0)}`;
   if (per1m >= 1) return `$${per1m.toFixed(2)}`;
@@ -15,7 +15,7 @@ export function formatCostPerMillion(per1k?: number): string {
 }
 
 export function formatDate(iso?: string): string {
-  if (!iso) return "—";
+  if (!iso) return "-";
   const d = new Date(iso);
   if (Number.isNaN(d.getTime())) return iso;
   return d.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });

@@ -101,7 +101,7 @@ export function ModelActivity({ provider, slug }: Props) {
 
           <ChartCard
             title="Top consumers"
-            subtitle="Ranked by request volume — apps, keys, or projects routing to this model"
+            subtitle="Ranked by request volume. Apps, keys, or projects routing to this model."
           >
             <TopConsumersTable metrics={metrics} />
           </ChartCard>

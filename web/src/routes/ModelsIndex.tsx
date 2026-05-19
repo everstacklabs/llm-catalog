@@ -246,7 +246,7 @@ export function ModelsIndex() {
 
           {filtered.length > 120 && (
             <div className="text-center text-sm text-muted">
-              Showing first 120 of {filtered.length} matches — refine filters to narrow further.
+              Showing first 120 of {filtered.length} matches. Refine filters to narrow further.
             </div>
           )}
         </section>
@@ -261,7 +261,7 @@ function Hero({ catalog }: { catalog: Catalog }) {
       <h1 className="text-3xl font-semibold tracking-tight">Model Catalog</h1>
       <p className="max-w-2xl text-muted">
         Browse every model and provider configured in the catalog. Pricing, context windows,
-        capabilities, and modalities — synced from the source-of-truth YAML.
+        capabilities, and modalities. Synced from the source-of-truth YAML.
       </p>
       <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
         <Stat label="Providers" value={catalog.total_providers} />

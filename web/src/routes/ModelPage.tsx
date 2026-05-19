@@ -126,7 +126,7 @@ export function ModelPage() {
                     {inputMods.length ? (
                       inputMods.map((m) => <Badge key={m}>{m}</Badge>)
                     ) : (
-                      <span className="text-muted">—</span>
+                      <span className="text-muted">-</span>
                     )}
                   </div>
                 </div>
@@ -136,7 +136,7 @@ export function ModelPage() {
                     {outputMods.length ? (
                       outputMods.map((m) => <Badge key={m}>{m}</Badge>)
                     ) : (
-                      <span className="text-muted">—</span>
+                      <span className="text-muted">-</span>
                     )}
                   </div>
                 </div>
@@ -150,7 +150,7 @@ export function ModelPage() {
             <Section title="Details">
               <dl className="divide-y text-sm">
                 <DataRow label="Model ID" value={<code className="font-mono text-xs">{model.slug}</code>} />
-                <DataRow label="Family" value={model.family || "—"} />
+                <DataRow label="Family" value={model.family || "-"} />
                 <DataRow label="Status" value={model.status || "stable"} />
                 <DataRow label="Knowledge cutoff" value={formatDate(model.knowledge_cutoff)} />
                 <DataRow label="Release date" value={formatDate(model.release_date)} />
