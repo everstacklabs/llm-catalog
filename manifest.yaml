@@ -2,8 +2,8 @@
 # Auto-generated - DO NOT EDIT MANUALLY
 # Run: ./scripts/generate-manifest.sh to regenerate
 
-version: "2.3.2"
-generated_at: "2026-05-10T01:09:26Z"
+version: "2.3.3"
+generated_at: "2026-06-29T08:03:31Z"
 schema_version: "1.0"
 
 providers:
@@ -30,6 +30,7 @@ providers:
       - providers/anthropic/models/claude-opus-4-5-20251101.yaml
       - providers/anthropic/models/claude-opus-4-6.yaml
       - providers/anthropic/models/claude-opus-4-7.yaml
+      - providers/anthropic/models/claude-opus-4-8.yaml
       - providers/anthropic/models/claude-opus-4-latest.yaml
       - providers/anthropic/models/claude-sonnet-4-20250514.yaml
       - providers/anthropic/models/claude-sonnet-4-5-20250929.yaml
@@ -198,8 +199,8 @@ providers:
       - providers/groq/models/moonshotai__kimi-k2-instruct-0905.yaml
       - providers/groq/models/openai__gpt-oss-120b.yaml
       - providers/groq/models/openai__gpt-oss-20b.yaml
-      - providers/groq/models/qwen-qwq-32b.yaml
       - providers/groq/models/qwen__qwen3-32b.yaml
+      - providers/groq/models/qwen-qwq-32b.yaml
 
   - name: huggingface
     files:
@@ -207,8 +208,6 @@ providers:
       - providers/huggingface/categories.yaml
       - providers/huggingface/templates.yaml
     models:
-      - providers/huggingface/models/Qwen__Qwen3-Coder-480B-A35B-Instruct.yaml
-      - providers/huggingface/models/Qwen__Qwen3-Next-80B-A3B-Instruct.yaml
       - providers/huggingface/models/deepseek-ai__DeepSeek-V4-Pro.yaml
       - providers/huggingface/models/huggingface-gpt-3.5-turbo.yaml
       - providers/huggingface/models/huggingface-gpt-4-turbo.yaml
@@ -217,6 +216,8 @@ providers:
       - providers/huggingface/models/huggingface-gpt-4o.yaml
       - providers/huggingface/models/huggingface-text-embedding-ada-002.yaml
       - providers/huggingface/models/moonshotai__Kimi-K2.6.yaml
+      - providers/huggingface/models/Qwen__Qwen3-Coder-480B-A35B-Instruct.yaml
+      - providers/huggingface/models/Qwen__Qwen3-Next-80B-A3B-Instruct.yaml
       - providers/huggingface/models/zai-org__GLM-5.1.yaml
 
   - name: minimax
@@ -487,8 +488,6 @@ providers:
       - providers/together/categories.yaml
       - providers/together/templates.yaml
     models:
-      - providers/together/models/Qwen__Qwen2.5-72B-Instruct-Turbo.yaml
-      - providers/together/models/Qwen__Qwen3-Coder-480B-A35B-Instruct-FP8.yaml
       - providers/together/models/deepseek-ai__DeepSeek-V3.yaml
       - providers/together/models/deepseek-ai__DeepSeek-V4-Pro.yaml
       - providers/together/models/meta-llama__Llama-3.1-8B-Instruct-Turbo.yaml
@@ -496,6 +495,8 @@ providers:
       - providers/together/models/meta-llama__Llama-3.3-70B-Instruct-Turbo.yaml
       - providers/together/models/moonshotai__Kimi-K2.6.yaml
       - providers/together/models/openai__gpt-oss-120b.yaml
+      - providers/together/models/Qwen__Qwen2.5-72B-Instruct-Turbo.yaml
+      - providers/together/models/Qwen__Qwen3-Coder-480B-A35B-Instruct-FP8.yaml
       - providers/together/models/togethercomputer__m2-bert-80M-8k-retrieval.yaml
       - providers/together/models/zai-org__GLM-5.1.yaml
 
@@ -542,6 +543,6 @@ providers:
 # Statistics
 stats:
   total_providers: 22
-  total_models: 377
+  total_models: 378
   static_providers: 15
   meta_providers: 7
