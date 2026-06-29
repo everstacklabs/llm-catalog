@@ -16,8 +16,9 @@ if [[ -f "$VERSION_FILE" ]]; then
     VERSION=$(cat "$VERSION_FILE" | tr -d '\n\r ')
 fi
 
-# Get current timestamp in ISO format
-GENERATED_AT=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+# Get current timestamp in ISO format. CI can pin this to the existing
+# manifest timestamp so freshness checks do not fail only because time passed.
+GENERATED_AT="${MANIFEST_GENERATED_AT:-$(date -u +"%Y-%m-%dT%H:%M:%SZ")}"
 
 # Initialize counters
 TOTAL_PROVIDERS=0
@@ -108,4 +109,3 @@ echo "✅ Generated manifest.yaml"
 echo "   - Providers: $TOTAL_PROVIDERS ($STATIC_PROVIDERS static, $META_PROVIDERS meta)"
 echo "   - Models: $TOTAL_MODELS"
 echo "   - Version: $VERSION"
-

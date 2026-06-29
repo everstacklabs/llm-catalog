@@ -32,12 +32,11 @@ jobs:
 
             **Pin to this version:**
             ```
-            https://raw.githubusercontent.com/midfusionlabs/model-catalog/${{ steps.version.outputs.version }}/manifest.yaml
+            https://raw.githubusercontent.com/everstacklabs/llm-catalog/${{ steps.version.outputs.version }}/manifest.yaml
             ```
 
             **Use latest:**
             ```
-            https://raw.githubusercontent.com/midfusionlabs/model-catalog/main/manifest.yaml
+            https://raw.githubusercontent.com/everstacklabs/llm-catalog/master/manifest.yaml
             ```
           generate_release_notes: false
-
