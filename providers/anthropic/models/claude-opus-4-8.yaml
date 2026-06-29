@@ -1,0 +1,27 @@
+name: "claude-opus-4-8"
+display_name: "Claude Opus 4.8"
+family: "claude-4"
+status: "stable"
+
+cost:
+  input_per_1k: 0.005
+  output_per_1k: 0.025
+  cache_read_per_1k: 0.0005
+  cache_write_per_1k: 0.00625
+
+limits:
+  max_tokens: 1000000
+  max_completion_tokens: 128000
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - extended_thinking
+  - computer_use
+
+modalities:
+  input: ["text", "image", "pdf"]
+  output: ["text"]
+
+knowledge_cutoff: "2026-01-31"
