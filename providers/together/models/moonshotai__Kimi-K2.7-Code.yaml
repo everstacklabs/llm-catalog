@@ -1,0 +1,24 @@
+name: "moonshotai/Kimi-K2.7-Code"
+display_name: "Kimi K2.7 Code (Together)"
+family: "kimi-k2"
+status: "stable"
+release_date: "2026-06-14"
+
+cost:
+  input_per_1k: 0.00095
+  output_per_1k: 0.004
+  cache_read_per_1k: 0.00019
+
+limits:
+  max_tokens: 262144
+  max_completion_tokens: 131072
+
+capabilities:
+  - chat
+  - function_calling
+  - reasoning
+
+modalities:
+  input: ["text"]
+  output: ["text"]
+notes: "Kimi coding model for software agents, refactors, and repository reasoning"

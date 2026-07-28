@@ -2,6 +2,7 @@ name: "anthropic.claude-opus-4-7"
 display_name: "Claude Opus 4.7 (Bedrock)"
 family: "claude-4"
 status: "stable"
+release_date: "2026-04-16"
 
 cost:
   input_per_1k: 0.005

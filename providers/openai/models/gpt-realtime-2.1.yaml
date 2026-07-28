@@ -1,0 +1,27 @@
+name: "gpt-realtime-2.1"
+display_name: "GPT-Realtime-2.1"
+family: "gpt"
+status: "stable"
+release_date: "2026-07-06"
+
+cost:
+  input_per_1k: 0.004
+  output_per_1k: 0.024
+  cache_read_per_1k: 0.0004
+
+limits:
+  max_tokens: 128000
+  max_completion_tokens: 32000
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text","audio","image"]
+  output: ["text","audio"]
+
+knowledge_cutoff: "2024-09-30"
+notes: "Realtime speech-to-speech model with configurable reasoning, tool use, and robust voice-agent behavior"

@@ -2,6 +2,7 @@ name: "kimi-k2-thinking-turbo"
 display_name: "Kimi K2 Thinking Turbo"
 family: "kimi-k2"
 status: "stable"
+release_date: "2025-11-06"
 
 cost:
   input_per_1k: 0.00115

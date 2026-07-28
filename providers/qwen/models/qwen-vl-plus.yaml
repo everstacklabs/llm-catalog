@@ -2,6 +2,7 @@ name: "qwen-vl-plus"
 display_name: "Qwen VL Plus"
 family: "qwen-vl"
 status: "stable"
+release_date: "2024-01-25"
 
 cost:
   input_per_1k: 0.001

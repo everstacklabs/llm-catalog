@@ -1,0 +1,25 @@
+name: "accounts/fireworks/routers/kimi-k2p7-code-fast"
+display_name: "Kimi K2.7 Code Fast (Fireworks)"
+family: "kimi-k2"
+status: "stable"
+release_date: "2026-06-12"
+
+cost:
+  input_per_1k: 0.0019
+  output_per_1k: 0.008
+  cache_read_per_1k: 0.00038
+
+limits:
+  max_tokens: 262000
+  max_completion_tokens: 262000
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text","image"]
+  output: ["text"]
+notes: "Kimi coding model for software agents, refactors, and repository reasoning"

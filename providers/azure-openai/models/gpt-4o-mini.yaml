@@ -2,6 +2,7 @@ name: "gpt-4o-mini"
 display_name: "GPT-4o Mini"
 family: "gpt-4o"
 status: "stable"
+release_date: "2024-07-18"
 
 cost:
   input_per_1k: 0.00015

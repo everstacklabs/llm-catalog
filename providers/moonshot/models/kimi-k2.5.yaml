@@ -2,6 +2,7 @@ name: "kimi-k2.5"
 display_name: "Kimi K2.5"
 family: "kimi-k2.5"
 status: "stable"
+release_date: "2026-01"
 
 cost:
   input_per_1k: 0.0006

@@ -2,6 +2,7 @@ name: "command-a-translate-08-2025"
 display_name: "Command A Translate"
 family: "command-a"
 status: "stable"
+release_date: "2025-08-28"
 
 cost:
   input_per_1k: 0.0025

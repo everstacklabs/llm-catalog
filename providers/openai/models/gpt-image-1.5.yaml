@@ -2,6 +2,7 @@ name: gpt-image-1.5
 display_name: Gpt Image 1.5
 family: other
 status: stable
+release_date: "2025-11-25"
 limits:
     max_tokens: 128000
 capabilities:

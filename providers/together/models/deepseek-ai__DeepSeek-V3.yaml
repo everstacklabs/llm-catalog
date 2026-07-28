@@ -2,6 +2,7 @@ name: "deepseek-ai/DeepSeek-V3"
 display_name: "DeepSeek V3"
 family: "deepseek"
 status: "deprecated"
+release_date: "2024-12-26"
 
 cost:
   input_per_1k: 0.00125

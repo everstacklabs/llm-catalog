@@ -25,4 +25,4 @@ modalities:
   output: ["text"]
 
 knowledge_cutoff: "2026-01-31"
-release_date: "2026-04-16"
+release_date: "2026-04-14"

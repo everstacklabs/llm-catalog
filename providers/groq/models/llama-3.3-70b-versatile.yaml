@@ -2,6 +2,7 @@ name: "llama-3.3-70b-versatile"
 display_name: "Llama 3.3 70B Versatile"
 family: "llama"
 status: "stable"
+release_date: "2024-12-06"
 
 cost:
   input_per_1k: 0.00059

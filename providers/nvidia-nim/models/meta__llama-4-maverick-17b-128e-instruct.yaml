@@ -2,6 +2,7 @@ name: "meta/llama-4-maverick-17b-128e-instruct"
 display_name: "Llama 4 Maverick 17B 128E"
 family: "llama"
 status: "stable"
+release_date: "2025-04-01"
 
 cost:
   input_per_1k: 0

@@ -2,6 +2,7 @@ name: "zai-glm-4.7"
 display_name: "Z.AI GLM-4.7"
 family: "glm"
 status: "stable"
+release_date: "2026-01-07"
 
 cost:
   input_per_1k: 0.00225

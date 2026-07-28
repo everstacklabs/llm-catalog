@@ -2,6 +2,7 @@ name: "qwen3.5-plus"
 display_name: "Qwen3.5 Plus"
 family: "qwen3.5"
 status: "stable"
+release_date: "2026-02-16"
 
 cost:
   input_per_1k: 0.0008

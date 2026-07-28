@@ -1,0 +1,25 @@
+name: "accounts/fireworks/models/kimi-k2p7-code"
+display_name: "Kimi K2.7 Code (Fireworks)"
+family: "kimi-k2"
+status: "stable"
+release_date: "2026-06-12"
+
+cost:
+  input_per_1k: 0.00095
+  output_per_1k: 0.004
+  cache_read_per_1k: 0.00019
+
+limits:
+  max_tokens: 262000
+  max_completion_tokens: 262000
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text","image"]
+  output: ["text"]
+notes: "Kimi coding model for software agents, refactors, and repository reasoning"

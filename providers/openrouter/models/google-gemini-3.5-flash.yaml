@@ -1,0 +1,28 @@
+name: "google/gemini-3.5-flash"
+display_name: "Gemini 3.5 Flash (OpenRouter)"
+family: "gemini-flash"
+status: "stable"
+release_date: "2026-05-19"
+
+cost:
+  input_per_1k: 0.0015
+  output_per_1k: 0.009
+  cache_read_per_1k: 0.00015
+  cache_write_per_1k: 0.000083333
+
+limits:
+  max_tokens: 1048576
+  max_completion_tokens: 65536
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text","image","video","audio","pdf"]
+  output: ["text"]
+
+knowledge_cutoff: "2025-01"
+notes: "Fast Gemini model balancing multimodal reasoning, tool use, and cost"

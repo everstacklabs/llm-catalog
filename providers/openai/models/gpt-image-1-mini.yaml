@@ -2,6 +2,7 @@ name: gpt-image-1-mini
 display_name: Gpt Image 1 Mini
 family: other
 status: stable
+release_date: "2025-09-26"
 limits:
     max_tokens: 128000
 capabilities:

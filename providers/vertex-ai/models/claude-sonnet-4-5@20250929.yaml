@@ -2,6 +2,7 @@ name: "claude-sonnet-4-5@20250929"
 display_name: "Claude Sonnet 4.5 (Vertex)"
 family: "claude-4"
 status: "stable"
+release_date: "2025-09-29"
 
 cost:
   input_per_1k: 0.003

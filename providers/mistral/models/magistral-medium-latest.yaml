@@ -2,6 +2,7 @@ name: "magistral-medium-latest"
 display_name: "Magistral Medium (Latest)"
 family: "magistral"
 status: "stable"
+release_date: "2025-03-17"
 
 cost:
   input_per_1k: 0.002

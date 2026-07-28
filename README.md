@@ -74,6 +74,7 @@ name: "gpt-4o"
 display_name: "GPT-4o"
 family: "gpt-4"
 status: "stable"
+release_date: "2024-05-13" # ISO 8601; used for newest-first ordering
 
 cost:
   input_per_1k: 0.005
@@ -134,8 +135,21 @@ cost_optimized:
 1. Navigate to the provider directory: `providers/{provider}/models/`
 2. Create a new YAML file (e.g., `new-model.yaml`)
 3. Update the version: `version.txt` (minor bump)
-4. Add changelog entry: `changelog.yaml`
-5. Push to GitHub - manifest is auto-generated!
+4. Add a structured changelog entry: `changelog.yaml`
+5. Regenerate the manifest and embedded offline defaults:
+
+   ```bash
+   ./scripts/generate-manifest.sh
+   go run model-catalog/scripts/generate-embedded-defaults.go
+   ```
+
+For a catalog-wide models.dev refresh, use the reviewed allowlist in
+`scripts/sync-models-dev.mjs`. It defaults to a dry run:
+
+```bash
+node model-catalog/scripts/sync-models-dev.mjs --source /path/to/api.json
+node model-catalog/scripts/sync-models-dev.mjs --source /path/to/api.json --write
+```
 
 ## Adding a New Provider
 
@@ -184,7 +198,7 @@ The catalog is synced to self-hosted gateways via the manifest:
 Default sync URL:
 
 ```
-https://raw.githubusercontent.com/everstacklabs/everstack/main/model-catalog/
+https://raw.githubusercontent.com/everstacklabs/llm-catalog/main
 ```
 
 ## Version Format

@@ -2,6 +2,7 @@ name: "gemini-3-pro-preview"
 display_name: "Gemini 3 Pro (Preview)"
 family: "gemini-3"
 status: "preview"
+release_date: "2025-11-18"
 
 cost:
   input_per_1k: 0.002

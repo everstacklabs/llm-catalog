@@ -2,6 +2,7 @@ name: "MiniMax-M2.1"
 display_name: "MiniMax M2.1"
 family: "minimax-m2.1"
 status: "stable"
+release_date: "2025-12-23"
 
 cost:
   input_per_1k: 0.0003

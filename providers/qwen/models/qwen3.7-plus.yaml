@@ -1,0 +1,28 @@
+name: "qwen3.7-plus"
+display_name: "Qwen3.7 Plus"
+family: "qwen"
+status: "stable"
+release_date: "2026-06-02"
+
+cost:
+  input_per_1k: 0.0005
+  output_per_1k: 0.003
+  cache_read_per_1k: 0.00005
+  cache_write_per_1k: 0.000625
+
+limits:
+  max_tokens: 1000000
+  max_completion_tokens: 65536
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text","image","video"]
+  output: ["text"]
+
+knowledge_cutoff: "2025-04"
+notes: "Multimodal Qwen workhorse for long-context agents, visual inputs, and coding"

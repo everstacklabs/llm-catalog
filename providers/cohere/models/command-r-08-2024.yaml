@@ -2,6 +2,7 @@ name: "command-r-08-2024"
 display_name: "Command R"
 family: "command-r"
 status: "stable"
+release_date: "2024-08-30"
 
 cost:
   input_per_1k: 0.00015

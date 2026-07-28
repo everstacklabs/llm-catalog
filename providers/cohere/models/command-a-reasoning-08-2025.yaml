@@ -2,6 +2,7 @@ name: "command-a-reasoning-08-2025"
 display_name: "Command A Reasoning"
 family: "command-a"
 status: "stable"
+release_date: "2025-08-21"
 
 cost:
   input_per_1k: 0.0025

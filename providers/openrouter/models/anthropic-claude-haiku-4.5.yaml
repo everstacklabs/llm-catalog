@@ -2,6 +2,7 @@ name: "anthropic/claude-haiku-4.5"
 display_name: "Claude Haiku 4.5 (OR)"
 family: "claude-4"
 status: "stable"
+release_date: "2025-10-15"
 
 cost:
   input_per_1k: 0.001

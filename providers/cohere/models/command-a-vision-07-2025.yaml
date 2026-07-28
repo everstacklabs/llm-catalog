@@ -2,6 +2,7 @@ name: "command-a-vision-07-2025"
 display_name: "Command A Vision"
 family: "command-a"
 status: "stable"
+release_date: "2025-07-31"
 
 cost:
   input_per_1k: 0.0025

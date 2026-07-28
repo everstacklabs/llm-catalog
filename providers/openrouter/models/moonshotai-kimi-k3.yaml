@@ -1,0 +1,25 @@
+name: "moonshotai/kimi-k3"
+display_name: "Kimi K3 (OpenRouter)"
+family: "kimi-k3"
+status: "stable"
+release_date: "2026-07-16"
+
+cost:
+  input_per_1k: 0.003
+  output_per_1k: 0.015
+  cache_read_per_1k: 0.0003
+
+limits:
+  max_tokens: 1048576
+  max_completion_tokens: 1048576
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text","image"]
+  output: ["text"]
+notes: "Kimi multimodal agent model for visual understanding, coding, and planning"

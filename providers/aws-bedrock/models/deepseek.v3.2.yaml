@@ -2,6 +2,7 @@ name: "deepseek.v3.2"
 display_name: "DeepSeek V3.2 (Bedrock)"
 family: "deepseek"
 status: "stable"
+release_date: "2026-02-06"
 
 cost:
   input_per_1k: 0.00062

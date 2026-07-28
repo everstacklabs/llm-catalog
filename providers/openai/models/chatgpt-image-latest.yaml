@@ -2,6 +2,7 @@ name: chatgpt-image-latest
 display_name: Chatgpt Image Latest
 family: other
 status: stable
+release_date: "2025-12-16"
 limits:
     max_tokens: 128000
 capabilities:

@@ -2,6 +2,7 @@ name: "claude-opus-4-7@default"
 display_name: "Claude Opus 4.7 (Vertex)"
 family: "claude-4"
 status: "stable"
+release_date: "2026-04-16"
 
 cost:
   input_per_1k: 0.005

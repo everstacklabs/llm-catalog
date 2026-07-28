@@ -2,6 +2,7 @@ name: "mistralai/mistral-large"
 display_name: "Mistral Large"
 family: "mistral"
 status: "stable"
+release_date: "2024-02-26"
 
 cost:
   input_per_1k: 0.003

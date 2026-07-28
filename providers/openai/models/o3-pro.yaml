@@ -2,6 +2,7 @@ name: "o3-pro"
 display_name: "o3-pro"
 family: "o-series"
 status: "stable"
+release_date: "2025-06-10"
 
 cost:
   input_per_1k: 0.02

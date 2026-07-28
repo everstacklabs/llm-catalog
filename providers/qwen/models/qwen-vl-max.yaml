@@ -2,6 +2,7 @@ name: "qwen-vl-max"
 display_name: "Qwen VL Max"
 family: "qwen-vl"
 status: "stable"
+release_date: "2024-04-08"
 
 cost:
   input_per_1k: 0.003

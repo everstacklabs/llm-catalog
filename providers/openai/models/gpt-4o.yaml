@@ -2,6 +2,7 @@ name: gpt-4o
 display_name: GPT-4o
 family: gpt-4
 status: stable
+release_date: "2024-05-13"
 cost:
     input_per_1k: 0.005
     output_per_1k: 0.015

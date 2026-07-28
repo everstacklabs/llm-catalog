@@ -1,0 +1,26 @@
+name: "stepfun-ai/Step-3.7-Flash"
+display_name: "Step 3.7 Flash (Hugging Face)"
+family: "stepfun-ai/Step-3.7-Flash"
+status: "stable"
+release_date: "2026-05-29"
+
+cost:
+  input_per_1k: 0.0002
+  output_per_1k: 0.00115
+
+limits:
+  max_tokens: 262144
+  max_completion_tokens: 256000
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text","image","video"]
+  output: ["text"]
+
+knowledge_cutoff: "2026-03-01"
+notes: "Newer StepFun flash model for faster agents, coding, and multimodal prompts"

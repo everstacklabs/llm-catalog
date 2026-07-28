@@ -1,0 +1,27 @@
+name: "moonshotai/kimi-k2.7-code"
+display_name: "Kimi K2.7 Code (OpenRouter)"
+family: "kimi-k2"
+status: "stable"
+release_date: "2026-06-12"
+
+cost:
+  input_per_1k: 0.00073
+  output_per_1k: 0.0035
+  cache_read_per_1k: 0.00015
+
+limits:
+  max_tokens: 262144
+  max_completion_tokens: 262144
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text","image"]
+  output: ["text"]
+
+knowledge_cutoff: "2025-01"
+notes: "Coding-focused Kimi model, stronger on long-horizon repo work with less overthinking"

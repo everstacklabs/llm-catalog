@@ -2,6 +2,7 @@ name: "mistral.mistral-large-3-675b-instruct"
 display_name: "Mistral Large 3 (Bedrock)"
 family: "mistral"
 status: "stable"
+release_date: "2025-12-02"
 
 cost:
   input_per_1k: 0.0005

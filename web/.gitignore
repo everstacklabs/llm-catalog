@@ -1,8 +1,0 @@
-node_modules/
-dist/
-public/catalog.json
-*.log
-.vite/
-tsconfig.tsbuildinfo
-.bun-cache/
-

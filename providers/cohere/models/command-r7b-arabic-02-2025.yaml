@@ -2,6 +2,7 @@ name: "command-r7b-arabic-02-2025"
 display_name: "Command R 7B Arabic"
 family: "command-r"
 status: "stable"
+release_date: "2025-02-27"
 
 cost:
   input_per_1k: 0.0000375

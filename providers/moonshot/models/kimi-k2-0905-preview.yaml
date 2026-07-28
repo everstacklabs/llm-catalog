@@ -2,6 +2,7 @@ name: "kimi-k2-0905-preview"
 display_name: "Kimi K2 0905"
 family: "kimi-k2"
 status: "stable"
+release_date: "2025-09-05"
 
 cost:
   input_per_1k: 0.0006

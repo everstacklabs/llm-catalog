@@ -2,6 +2,7 @@ name: "gpt-4.1-nano"
 display_name: "GPT-4.1 Nano (Azure)"
 family: "gpt-4.1"
 status: "stable"
+release_date: "2025-04-14"
 
 cost:
   input_per_1k: 0.0001

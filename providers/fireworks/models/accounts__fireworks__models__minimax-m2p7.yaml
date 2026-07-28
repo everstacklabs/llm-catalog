@@ -2,6 +2,7 @@ name: "accounts/fireworks/models/minimax-m2p7"
 display_name: "MiniMax M2.7 (Fireworks)"
 family: "minimax"
 status: "stable"
+release_date: "2026-04-12"
 
 cost:
   input_per_1k: 0.0003

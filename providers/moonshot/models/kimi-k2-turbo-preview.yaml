@@ -2,6 +2,7 @@ name: "kimi-k2-turbo-preview"
 display_name: "Kimi K2 Turbo"
 family: "kimi-k2"
 status: "stable"
+release_date: "2025-09-05"
 
 cost:
   input_per_1k: 0.0024

@@ -2,6 +2,7 @@ name: "anthropic/claude-sonnet-4.6"
 display_name: "Claude Sonnet 4.6 (OR)"
 family: "claude-4"
 status: "stable"
+release_date: "2026-02-17"
 
 cost:
   input_per_1k: 0.003

@@ -1,0 +1,22 @@
+name: "Qwen/Qwen3.7-Max"
+display_name: "Qwen3.7 Max (Together)"
+family: "qwen"
+status: "stable"
+release_date: "2026-05-21"
+
+cost:
+  input_per_1k: 0.00125
+  output_per_1k: 0.00375
+
+limits:
+  max_tokens: 1000000
+  max_completion_tokens: 500000
+
+capabilities:
+  - chat
+  - function_calling
+
+modalities:
+  input: ["text"]
+  output: ["text"]
+notes: "Flagship Qwen model for complex reasoning, coding, and agentic workflows"

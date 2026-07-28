@@ -1,0 +1,25 @@
+name: "thinkingmachines/inkling"
+display_name: "Inkling (OpenRouter)"
+family: "ling"
+status: "stable"
+release_date: "2026-07-15"
+
+cost:
+  input_per_1k: 0.001
+  output_per_1k: 0.00405
+  cache_read_per_1k: 0.00017
+
+limits:
+  max_tokens: 1048576
+  max_completion_tokens: 1048576
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text","image","audio"]
+  output: ["text"]
+notes: "Multimodal reasoning model for visual analysis, planning, and tool use"

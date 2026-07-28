@@ -2,6 +2,7 @@ name: "deepseek-v4-flash"
 display_name: "DeepSeek V4 Flash"
 family: "deepseek-v4"
 status: "stable"
+release_date: "2026-04-24"
 
 cost:
   input_per_1k: 0.00014

@@ -2,6 +2,7 @@ name: "claude-opus-4-1-20250805"
 display_name: "Claude Opus 4.1"
 family: "claude-4"
 status: "stable"
+release_date: "2025-08-05"
 
 cost:
   input_per_1k: 0.015

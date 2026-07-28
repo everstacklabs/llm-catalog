@@ -2,6 +2,7 @@ name: "anthropic/claude-sonnet-4"
 display_name: "Claude Sonnet 4"
 family: "claude"
 status: "stable"
+release_date: "2025-05-22"
 
 cost:
   input_per_1k: 0.003

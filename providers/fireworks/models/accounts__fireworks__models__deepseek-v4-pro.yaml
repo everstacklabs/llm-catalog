@@ -2,6 +2,7 @@ name: "accounts/fireworks/models/deepseek-v4-pro"
 display_name: "DeepSeek V4 Pro (Fireworks)"
 family: "deepseek-v4"
 status: "stable"
+release_date: "2026-04-24"
 
 cost:
   input_per_1k: 0.00174

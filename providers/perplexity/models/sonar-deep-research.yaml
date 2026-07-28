@@ -2,6 +2,7 @@ name: "sonar-deep-research"
 display_name: "Sonar Deep Research"
 family: "sonar"
 status: "preview"
+release_date: "2025-02-01"
 
 cost:
   input_per_1k: 0.002

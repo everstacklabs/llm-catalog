@@ -2,6 +2,7 @@ name: "deepseek-ai/DeepSeek-V4-Pro"
 display_name: "DeepSeek V4 Pro (HF)"
 family: "deepseek-v4"
 status: "stable"
+release_date: "2026-04-24"
 
 cost:
   input_per_1k: 0.00174

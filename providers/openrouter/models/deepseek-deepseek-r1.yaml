@@ -2,6 +2,7 @@ name: "deepseek/deepseek-r1"
 display_name: "DeepSeek R1"
 family: "deepseek-reasoning"
 status: "stable"
+release_date: "2025-01-20"
 
 cost:
   input_per_1k: 0.002

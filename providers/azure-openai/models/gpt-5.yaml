@@ -2,6 +2,7 @@ name: "gpt-5"
 display_name: "GPT-5 (Azure)"
 family: "gpt-5"
 status: "stable"
+release_date: "2025-08-07"
 
 cost:
   input_per_1k: 0.00125

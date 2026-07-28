@@ -2,6 +2,7 @@ name: "meta-llama/llama-4-scout-17b-16e-instruct"
 display_name: "Llama 4 Scout 17B 16E (Groq)"
 family: "llama"
 status: "stable"
+release_date: "2025-04-05"
 
 cost:
   input_per_1k: 0.00011

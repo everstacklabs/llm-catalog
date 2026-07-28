@@ -2,6 +2,7 @@ name: "text-embedding-ada-002"
 display_name: "Text Embedding Ada 002"
 family: "embedding"
 status: "stable"
+release_date: "2022-12-15"
 
 cost:
   input_per_1k: 0.0001

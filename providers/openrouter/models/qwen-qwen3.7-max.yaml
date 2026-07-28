@@ -1,0 +1,25 @@
+name: "qwen/qwen3.7-max"
+display_name: "Qwen3.7 Max (OpenRouter)"
+family: "qwen"
+status: "stable"
+release_date: "2026-05-21"
+
+cost:
+  input_per_1k: 0.001475
+  output_per_1k: 0.004425
+  cache_read_per_1k: 0.000295
+  cache_write_per_1k: 0.00184375
+
+limits:
+  max_tokens: 1000000
+  max_completion_tokens: 65536
+
+capabilities:
+  - chat
+  - function_calling
+  - reasoning
+
+modalities:
+  input: ["text"]
+  output: ["text"]
+notes: "Qwen frontier model tuned for agent frameworks, coding assistants, and long tasks"

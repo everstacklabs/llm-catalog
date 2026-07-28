@@ -2,6 +2,7 @@ name: "openai/gpt-4-turbo"
 display_name: "GPT-4 Turbo"
 family: "gpt-4"
 status: "stable"
+release_date: "2023-11-06"
 
 cost:
   input_per_1k: 0.01

@@ -2,6 +2,7 @@ name: o1
 display_name: O1
 family: o-series
 status: stable
+release_date: "2024-12-05"
 cost:
     input_per_1k: 0.015
     output_per_1k: 0.06

@@ -2,6 +2,7 @@ name: "qwen3-32b"
 display_name: "Qwen3 32B"
 family: "qwen3"
 status: "stable"
+release_date: "2025-04"
 
 cost:
   input_per_1k: 0.0007

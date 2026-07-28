@@ -2,6 +2,7 @@ name: "mistral-medium-latest"
 display_name: "Mistral Medium (Latest)"
 family: "mistral-medium"
 status: "stable"
+release_date: "2026-04-29"
 
 cost:
   input_per_1k: 0.0015

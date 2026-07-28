@@ -2,6 +2,7 @@ name: "gpt-5.3-chat-latest"
 display_name: "GPT-5.3 Chat (Latest)"
 family: "gpt-5"
 status: "stable"
+release_date: "2026-03-03"
 
 cost:
   input_per_1k: 0.00175

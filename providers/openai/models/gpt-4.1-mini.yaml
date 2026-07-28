@@ -2,6 +2,7 @@ name: gpt-4.1-mini
 display_name: GPT-4.1 Mini
 family: gpt-4
 status: stable
+release_date: "2025-04-14"
 cost:
     input_per_1k: 0.0004
     output_per_1k: 0.0016

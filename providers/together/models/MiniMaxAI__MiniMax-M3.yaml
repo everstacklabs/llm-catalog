@@ -1,0 +1,25 @@
+name: "MiniMaxAI/MiniMax-M3"
+display_name: "MiniMax-M3 (Together)"
+family: "minimax"
+status: "stable"
+release_date: "2026-06-12"
+
+cost:
+  input_per_1k: 0.0003
+  output_per_1k: 0.0012
+  cache_read_per_1k: 0.00006
+
+limits:
+  max_tokens: 524288
+  max_completion_tokens: 250000
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text","image"]
+  output: ["text"]
+notes: "MiniMax multimodal coding model for long-context reasoning and agent tasks"

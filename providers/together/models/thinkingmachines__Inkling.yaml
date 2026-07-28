@@ -1,0 +1,25 @@
+name: "thinkingmachines/Inkling"
+display_name: "Inkling (Together)"
+family: "ling"
+status: "stable"
+release_date: "2026-07-15"
+
+cost:
+  input_per_1k: 0.001
+  output_per_1k: 0.00405
+  cache_read_per_1k: 0.00017
+
+limits:
+  max_tokens: 524288
+  max_completion_tokens: 131072
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text","image","audio"]
+  output: ["text"]
+notes: "Multimodal MoE reasoning model (975B total, 41B active) for text, image, and audio"

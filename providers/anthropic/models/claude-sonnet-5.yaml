@@ -1,0 +1,29 @@
+name: "claude-sonnet-5"
+display_name: "Claude Sonnet 5"
+family: "claude-sonnet"
+status: "stable"
+release_date: "2026-06-29"
+
+cost:
+  input_per_1k: 0.002
+  output_per_1k: 0.01
+  cache_read_per_1k: 0.0002
+  cache_write_per_1k: 0.0025
+
+limits:
+  max_tokens: 1000000
+  max_completion_tokens: 128000
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - extended_thinking
+  - computer_use
+
+modalities:
+  input: ["text","image","pdf"]
+  output: ["text"]
+
+knowledge_cutoff: "2026-01-31"
+notes: "Everyday Claude agent model for coding, planning, browsing, and general work"

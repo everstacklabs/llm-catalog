@@ -2,6 +2,7 @@ name: "deepseek-reasoner"
 display_name: "DeepSeek Reasoner (V4)"
 family: "deepseek-v4"
 status: "stable"
+release_date: "2025-12-01"
 
 cost:
   input_per_1k: 0.00014

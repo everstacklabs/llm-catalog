@@ -2,6 +2,7 @@ name: pixtral-large-latest
 display_name: Pixtral Large
 family: pixtral
 status: stable
+release_date: "2024-11-01"
 
 cost:
   input_per_1k: 0.002

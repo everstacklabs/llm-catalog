@@ -1,0 +1,24 @@
+name: "MiniMaxAI/MiniMax-M3"
+display_name: "MiniMax-M3 (Hugging Face)"
+family: "minimax"
+status: "stable"
+release_date: "2026-06-01"
+
+cost:
+  input_per_1k: 0.0003
+  output_per_1k: 0.0012
+
+limits:
+  max_tokens: 524288
+  max_completion_tokens: 128000
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text","image"]
+  output: ["text"]
+notes: "MiniMax multimodal model for long-context coding, perception, and agent planning"

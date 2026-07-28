@@ -2,6 +2,7 @@ name: "gpt-5-pro"
 display_name: "GPT-5 Pro"
 family: "gpt-5"
 status: "stable"
+release_date: "2025-10-06"
 
 cost:
   input_per_1k: 0.015

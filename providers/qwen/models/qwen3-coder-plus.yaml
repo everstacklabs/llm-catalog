@@ -2,6 +2,7 @@ name: "qwen3-coder-plus"
 display_name: "Qwen3 Coder Plus"
 family: "qwen3-commercial"
 status: "stable"
+release_date: "2025-07-23"
 
 cost:
   input_per_1k: 0.001

@@ -1,0 +1,24 @@
+name: "stepfun-ai/step-3.7-flash"
+display_name: "Step 3.7 Flash (NVIDIA NIM)"
+family: "stepfun-ai/step-3.7-flash"
+status: "stable"
+release_date: "2026-05-28"
+
+cost:
+  input_per_1k: 0
+  output_per_1k: 0
+
+limits:
+  max_tokens: 256000
+  max_completion_tokens: 16384
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text","image"]
+  output: ["text"]
+notes: "StepFun flash model for efficient multimodal reasoning, coding, and tool use"

@@ -2,6 +2,7 @@ name: "gpt-oss-120b"
 display_name: "GPT OSS 120B"
 family: "gpt-oss"
 status: "stable"
+release_date: "2025-08-05"
 
 cost:
   input_per_1k: 0.00025

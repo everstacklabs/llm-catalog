@@ -1,0 +1,25 @@
+name: "grok-4.5"
+display_name: "Grok 4.5"
+family: "grok"
+status: "stable"
+release_date: "2026-07-08"
+
+cost:
+  input_per_1k: 0.002
+  output_per_1k: 0.006
+  cache_read_per_1k: 0.0003
+
+limits:
+  max_tokens: 500000
+  max_completion_tokens: 500000
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text","image","pdf"]
+  output: ["text"]
+notes: "xAI's latest Grok for chat, coding, agentic tools, and lower hallucination risk"

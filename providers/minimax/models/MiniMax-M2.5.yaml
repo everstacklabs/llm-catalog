@@ -2,6 +2,7 @@ name: "MiniMax-M2.5"
 display_name: "MiniMax M2.5"
 family: "minimax-m2.5"
 status: "stable"
+release_date: "2026-02-12"
 
 cost:
   input_per_1k: 0.0003

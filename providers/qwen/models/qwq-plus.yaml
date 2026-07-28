@@ -2,6 +2,7 @@ name: "qwq-plus"
 display_name: "QwQ Plus"
 family: "qwq"
 status: "stable"
+release_date: "2025-03-05"
 
 cost:
   input_per_1k: 0.0008

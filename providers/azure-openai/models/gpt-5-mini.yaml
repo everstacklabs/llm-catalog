@@ -2,6 +2,7 @@ name: "gpt-5-mini"
 display_name: "GPT-5 Mini (Azure)"
 family: "gpt-5"
 status: "stable"
+release_date: "2025-08-07"
 
 cost:
   input_per_1k: 0.00025

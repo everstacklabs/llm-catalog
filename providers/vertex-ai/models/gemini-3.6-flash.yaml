@@ -1,0 +1,27 @@
+name: "gemini-3.6-flash"
+display_name: "Gemini 3.6 Flash (Vertex)"
+family: "gemini-flash"
+status: "stable"
+release_date: "2026-07-21"
+
+cost:
+  input_per_1k: 0.0015
+  output_per_1k: 0.0075
+  cache_read_per_1k: 0.00015
+
+limits:
+  max_tokens: 1048576
+  max_completion_tokens: 65536
+
+capabilities:
+  - chat
+  - function_calling
+  - vision
+  - reasoning
+
+modalities:
+  input: ["text","image","video","audio","pdf"]
+  output: ["text"]
+
+knowledge_cutoff: "2026-03"
+notes: "Fast Gemini model balancing multimodal reasoning, tool use, and cost"
