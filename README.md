@@ -1,6 +1,8 @@
 # Model Catalog
 
-This directory contains the centralized model and provider catalog that can be dynamically synced to self-hosted gateways.
+This directory contains the source for the centralized model and provider
+catalog. Runtime releases are aggregated, signed, and published independently
+of the gateway binary and GitHub availability.
 
 ## Structure (v2.0)
 
@@ -142,6 +144,14 @@ cost_optimized:
    ./scripts/generate-manifest.sh
    go run model-catalog/scripts/generate-embedded-defaults.go
    ```
+6. Run `make catalog-validate`. After merge, the self-hosted catalog release
+   pipeline publishes and verifies the signed release automatically. The
+   gateway applies it asynchronously without a restart or gateway deployment.
+
+If GitHub Actions is unavailable, an operator can run
+`make catalog-publish CATALOG_DIR=/path/to/llm-catalog` with credentials loaded
+from the independent release secret manager. This is the same release path as
+CI, not a separate emergency format.
 
 For a catalog-wide models.dev refresh, use the reviewed allowlist in
 `scripts/sync-models-dev.mjs`. It defaults to a dry run:
@@ -158,7 +168,7 @@ node model-catalog/scripts/sync-models-dev.mjs --source /path/to/api.json --writ
 3. Create `categories.yaml` and `templates.yaml`
 4. Add models to `models/` subdirectory
 5. Bump version in `version.txt`
-6. Push to GitHub - manifest is auto-generated!
+6. Regenerate, validate, and publish the signed catalog release.
 
 ## Manifest Generation
 
@@ -170,7 +180,7 @@ The `manifest.yaml` is **auto-generated** - do not edit it manually!
 ./scripts/generate-manifest.sh
 ```
 
-### GitHub Actions (Automatic)
+### GitHub Actions (Source convenience)
 
 The manifest is automatically regenerated when:
 
@@ -186,20 +196,32 @@ The workflow (`.github/workflows/generate-catalog-manifest.yaml`):
 
 For PRs, it uploads the manifest as an artifact and comments with a preview.
 
-## Remote Sync
+The GitHub workflow keeps source artifacts reviewable. It is not the runtime
+distribution path and is not required to publish from a local checkout.
 
-The catalog is synced to self-hosted gateways via the manifest:
+## Runtime Distribution
 
-1. Gateway fetches `manifest.yaml` to get file list
-2. Compares version with cached version
-3. If newer, fetches listed files in parallel
-4. Aggregates into runtime configuration
+The catalog is delivered through a signed CodePush-style release protocol:
 
-Default sync URL:
+1. The release tool validates and aggregates the complete hierarchical source.
+2. It signs a channel document that identifies the exact immutable bundle.
+3. It uploads the bundle to dedicated Cloudflare R2 storage and reads it back.
+4. It promotes the small signed channel pointer with an ETag compare-and-swap
+   only after bundle verification.
+5. Gateways poll the channel asynchronously and retain their last-known-good
+   catalog on any failure. Gateways authenticate the signature and then verify
+   the exact path, length, SHA-256 digest, schema, version, and contents.
+
+Target production URL:
 
 ```
-https://raw.githubusercontent.com/everstacklabs/llm-catalog/main
+https://catalog.everstack.ai/v1
 ```
+
+GitHub remains a source collaboration surface. It is not in the production
+gateway startup or refresh path after the signed distribution configuration is
+rolled out. See `docs/architecture/model-catalog-distribution.md` and
+`infra/cloudflare/r2-catalog-distribution/README.md`.
 
 ## Version Format
 
@@ -216,4 +238,9 @@ The loader supports both the new hierarchical structure and legacy flat files (`
 1. First tries `providers/` directory structure
 2. Falls back to `models.yaml` + `providers.yaml` if not found
 
-This ensures backward compatibility during the transition period.
+This ensures backward compatibility during the source-layout transition. The
+unsigned manifest and flat-file remote loaders also remain temporarily for a
+staged migration from custom legacy origins when operators explicitly set
+`EVS_CATALOG_REQUIRE_SIGNATURE=false`. The official R2 origin has no unsigned
+mode. New production releases use signed bundles, and gateways require
+signature verification by default.

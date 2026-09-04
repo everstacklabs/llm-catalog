@@ -22,3 +22,12 @@ capabilities:
 modalities:
   input: ["text", "image"]
   output: ["text"]
+
+parameters:
+  - key: "max_output_tokens"
+    display_name: "Max output tokens"
+    type: "integer"
+    min_value: 1
+    has_min_value: true
+    max_value: 100000
+    has_max_value: true

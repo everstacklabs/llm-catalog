@@ -1,4 +1,90 @@
 versions:
+  - version: "2.8.0"
+    date: "2026-09-03"
+    description: "Adds GPT-6 Astra and Claude Fable 5.1 from their first-party API documentation, including their complete low, medium, high, xhigh, and max reasoning-effort variants. GPT-6 Astra includes its 1.05M-token context, 128K output limit, Responses API guidance, structured output support, cache pricing, and the price multipliers above 272K input tokens. Claude Fable 5.1 includes its 1M-token context, 128K output limit, adaptive-thinking controls, reduced cache-read price, and both 5-minute and 1-hour cache-write rates. This release also corrects Claude Fable 5's first-party release date from June 7 to June 9, 2026, and refreshes the provider UI with OpenRouter's current official glyph."
+    changes:
+      new_models:
+        - { provider: anthropic, model: "claude-fable-5-1", display_name: "Claude Fable 5.1" }
+        - { provider: openai, model: "gpt-6-astra", display_name: "GPT-6 Astra" }
+
+  - version: "2.7.0"
+    date: "2026-08-25"
+    description: "Adds Voyage AI as a direct embeddings provider with 6 retrieval models, closing the largest gap in a modality Everstack already supports: the gateway has carried an embeddings interface and the catalog has carried embedding models all along, but Voyage, the most widely recommended retrieval embedding provider, was absent. Model ids, pricing and context lengths were taken from Voyage's own documentation rather than models.dev, which indexes text generation only. Voyage's rerankers are deliberately excluded: the shared OpenAI-compatible client does not implement gateway.RerankProvider, so a reranker in the catalog would resolve to a provider that cannot serve it. This entry also carries the additions from 2.5.0 and 2.6.0, which publish on the same merge, so every model added across the three releases is marked new exactly once."
+    changes:
+      new_models:
+        - { provider: aws-bedrock, model: "xai.grok-4.6", display_name: "Grok 4.6 (Bedrock)" }
+        - { provider: deepseek, model: "deepseek-v4-flash-vision-exp", display_name: "DeepSeek V4 Flash Vision Exp" }
+        - { provider: fireworks, model: "accounts/fireworks/models/deepseek-v4-flash-0731", display_name: "DeepSeek V4 Flash 0731 (Fireworks)" }
+        - { provider: fireworks, model: "accounts/fireworks/models/deepseek-v4-pro-0813", display_name: "DeepSeek V4 Pro 0813 (Fireworks)" }
+        - { provider: fireworks, model: "accounts/fireworks/models/kimi-k3", display_name: "Kimi K3 (Fireworks)" }
+        - { provider: fireworks, model: "accounts/fireworks/models/muse-glimmer-30b", display_name: "Muse Glimmer 30B (Fireworks)" }
+        - { provider: fireworks, model: "accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b", display_name: "Nemotron 3.5 Lightning 30B A3B (Fireworks)" }
+        - { provider: fireworks, model: "accounts/fireworks/models/qwen3p8-max", display_name: "Qwen3.8 Max (Fireworks)" }
+        - { provider: fireworks, model: "accounts/fireworks/routers/kimi-k3-fast", display_name: "Kimi K3 Fast (Fireworks)" }
+        - { provider: google, model: "gemini-3.7-flash", display_name: "Gemini 3.7 Flash" }
+        - { provider: huggingface, model: "Qwen/Qwen3.8-2.4T-A95B", display_name: "Qwen3.8 2.4T A95B (Hugging Face)" }
+        - { provider: huggingface, model: "deepseek-ai/DeepSeek-V4-Flash-0731", display_name: "DeepSeek V4 Flash 0731 (Hugging Face)" }
+        - { provider: huggingface, model: "deepseek-ai/DeepSeek-V4-Pro-0813", display_name: "DeepSeek V4 Pro 0813 (Hugging Face)" }
+        - { provider: huggingface, model: "thinkingmachines/Inkling-Small", display_name: "Inkling Small (Hugging Face)" }
+        - { provider: nvidia-nim, model: "deepseek-ai/deepseek-v4-flash-0731", display_name: "DeepSeek V4 Flash 0731 (NVIDIA NIM)" }
+        - { provider: nvidia-nim, model: "meta/muse-glimmer-30b", display_name: "Muse Glimmer 30B (NVIDIA NIM)" }
+        - { provider: nvidia-nim, model: "nvidia/nemotron-3.5-lightning-30b-a3b", display_name: "Nemotron 3.5 Lightning 30B A3B (NVIDIA NIM)" }
+        - { provider: openrouter, model: "bytedance-seed/seed-2-1-turbo", display_name: "Seed 2.1 Turbo (OpenRouter)" }
+        - { provider: openrouter, model: "deepseek/deepseek-v4-flash-0731", display_name: "DeepSeek V4 Flash 0731 (OpenRouter)" }
+        - { provider: openrouter, model: "deepseek/deepseek-v4-flash-vision-exp", display_name: "DeepSeek V4 Flash Vision Exp (OpenRouter)" }
+        - { provider: openrouter, model: "deepseek/deepseek-v4-pro-0813", display_name: "DeepSeek V4 Pro 0813 (OpenRouter)" }
+        - { provider: openrouter, model: "google/gemini-3.7-flash", display_name: "Gemini 3.7 Flash (OpenRouter)" }
+        - { provider: openrouter, model: "meta/muse-glimmer-30b", display_name: "Muse Glimmer 30B (OpenRouter)" }
+        - { provider: openrouter, model: "meta/muse-spark-1.2", display_name: "Muse Spark 1.2 (OpenRouter)" }
+        - { provider: openrouter, model: "nvidia/nemotron-3.5-lightning", display_name: "Nemotron 3.5 Lightning 30B A3B (OpenRouter)" }
+        - { provider: openrouter, model: "qwen/qwen3.8-2.4t-a95b", display_name: "Qwen3.8 2.4T A95B (OpenRouter)" }
+        - { provider: openrouter, model: "qwen/qwen3.8-27b", display_name: "Qwen3.8 27B (OpenRouter)" }
+        - { provider: openrouter, model: "qwen/qwen3.8-max", display_name: "Qwen3.8 Max (OpenRouter)" }
+        - { provider: openrouter, model: "sakana/sakana-namazu", display_name: "Sakana Namazu (OpenRouter)" }
+        - { provider: openrouter, model: "tencent/hy-mt2-30b-a3b", display_name: "Hy-MT2-30B-A3B (OpenRouter)" }
+        - { provider: openrouter, model: "thinkingmachines/inkling-small", display_name: "Inkling Small (OpenRouter)" }
+        - { provider: openrouter, model: "upstage/solar-pro4", display_name: "Solar Pro 4 (OpenRouter)" }
+        - { provider: openrouter, model: "x-ai/grok-4.6", display_name: "Grok 4.6 (OpenRouter)" }
+        - { provider: openrouter, model: "z-ai/glm-5.3", display_name: "GLM-5.3 (OpenRouter)" }
+        - { provider: qwen, model: "deepseek-v4-flash-0731", display_name: "DeepSeek V4 Flash 0731" }
+        - { provider: qwen, model: "qwen3.8-max", display_name: "Qwen3.8 Max" }
+        - { provider: together, model: "deepseek-ai/DeepSeek-V4-Flash-0731", display_name: "DeepSeek V4 Flash 0731 (Together)" }
+        - { provider: together, model: "deepseek-ai/DeepSeek-V4-Pro-0813", display_name: "DeepSeek V4 Pro 0813 (Together)" }
+        - { provider: vertex-ai, model: "gemini-3.7-flash", display_name: "Gemini 3.7 Flash (Vertex)" }
+        - { provider: voyage, model: "voyage-4", display_name: "Voyage 4" }
+        - { provider: voyage, model: "voyage-4-large", display_name: "Voyage 4 Large" }
+        - { provider: voyage, model: "voyage-4-lite", display_name: "Voyage 4 Lite" }
+        - { provider: voyage, model: "voyage-code-4", display_name: "Voyage Code 4" }
+        - { provider: voyage, model: "voyage-finance-2", display_name: "Voyage Finance 2" }
+        - { provider: voyage, model: "voyage-law-2", display_name: "Voyage Law 2" }
+        - { provider: xai, model: "grok-4.6", display_name: "Grok 4.6" }
+        - { provider: zai, model: "glm-4.5", display_name: "GLM-4.5" }
+        - { provider: zai, model: "glm-4.5-air", display_name: "GLM-4.5-Air" }
+        - { provider: zai, model: "glm-4.5-flash", display_name: "GLM-4.5-Flash" }
+        - { provider: zai, model: "glm-4.5v", display_name: "GLM-4.5V" }
+        - { provider: zai, model: "glm-4.6", display_name: "GLM-4.6" }
+        - { provider: zai, model: "glm-4.6v", display_name: "GLM-4.6V" }
+        - { provider: zai, model: "glm-4.7", display_name: "GLM-4.7" }
+        - { provider: zai, model: "glm-4.7-flash", display_name: "GLM-4.7-Flash" }
+        - { provider: zai, model: "glm-4.7-flashx", display_name: "GLM-4.7-FlashX" }
+        - { provider: zai, model: "glm-5", display_name: "GLM-5" }
+        - { provider: zai, model: "glm-5-turbo", display_name: "GLM-5-Turbo" }
+        - { provider: zai, model: "glm-5.1", display_name: "GLM-5.1" }
+        - { provider: zai, model: "glm-5.2", display_name: "GLM-5.2" }
+        - { provider: zai, model: "glm-5.3", display_name: "GLM-5.3" }
+        - { provider: zai, model: "glm-5v-turbo", display_name: "GLM-5V-Turbo" }
+
+  - version: "2.6.0"
+    date: "2026-08-25"
+    description: "Adds Z.AI as a direct provider, carrying the full GLM inventory of 15 models including GLM-5.3, GLM-5.2 and the GLM-4.7 line. GLM was previously reachable only by reselling through Fireworks, Together, OpenRouter or NVIDIA NIM, each of which adds a markup and its own rate limits. Z.AI is carried by 6 of the 17 competitor gateways surveyed in docs/design/provider-catalog-expansion.md, the widest coverage of any provider Everstack did not integrate directly. Its model list is consolidated under 2.7.0: all three releases publish on the same merge, and the catalog loader marks models as new only for the release matching version.txt, so a list left here would never reach the UI."
+    changes:
+      new_models: []
+
+  - version: "2.5.0"
+    date: "2026-08-25"
+    description: "Full reconciliation of every provider catalog against models.dev: 111 models added and 224 existing models reconciled against upstream pricing, context and completion limits, capabilities, and modalities. The catalog grows from 459 to 570 models. 40 of the additions were released since 2.4.0 and are listed below so they receive a new marker; the remaining 71 are backfills of models that already existed and are deliberately left unmarked. New arrivals include Grok 4.6, Gemini 3.7 Flash, GLM 5.3, Qwen 3.8 (Max, 27B, 2.4T-A95B), DeepSeek V4 Pro 0813 and V4 Flash 0731, Kimi K3, Nemotron 3.5 Lightning, Muse Glimmer and Muse Spark, Seed 2.1 Turbo, Solar Pro 4, and Hunyuan MT2. Models absent from the upstream text-generation feed were left untouched rather than deprecated, because this catalog also carries dated snapshot ids and non-text products that feed never lists. Its model list is consolidated under 2.7.0: all three releases publish on the same merge, and the catalog loader marks models as new only for the release matching version.txt, so a list left here would never reach the UI."
+    changes:
+      new_models: []
   - version: "2.4.0"
     date: "2026-07-27"
     description: "Catalog refresh across all 22 providers: 82 newly released text-generation models added across 16 provider catalogs, including Claude 5, GPT-5.6, Gemini 3.6 Flash, Grok 4.5, Kimi K3, MiniMax M3, Qwen 3.7, Command A Plus, GLM 5.2, and Nemotron 3 Ultra. Release dates were also backfilled for 195 existing models so provider model lists can be ordered newest-first. Providers without compatible static additions remain unchanged; runtime-discovered catalogs continue to resolve their full inventories dynamically."
