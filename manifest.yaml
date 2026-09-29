@@ -2,8 +2,8 @@
 # Auto-generated - DO NOT EDIT MANUALLY
 # Run: ./scripts/generate-manifest.sh to regenerate
 
-version: "2.9.0"
-generated_at: "2026-09-29T10:46:10Z"
+version: "2.10.0"
+generated_at: "2026-09-29T11:19:08Z"
 schema_version: "1.0"
 
 providers:
@@ -285,6 +285,20 @@ providers:
       - providers/huggingface/models/thinkingmachines__Inkling.yaml
       - providers/huggingface/models/zai-org__GLM-5.1.yaml
       - providers/huggingface/models/zai-org__GLM-5.2.yaml
+
+  - name: kev
+    files:
+      - providers/kev/provider.yaml
+    models:
+      - providers/kev/models/kev-latest.yaml
+
+  - name: laya
+    files:
+      - providers/laya/provider.yaml
+    models:
+      - providers/laya/models/english.yaml
+      - providers/laya/models/multilingual.yaml
+      - providers/laya/models/typed-decisions.yaml
 
   - name: minimax
     files:
@@ -725,6 +739,12 @@ providers:
       - providers/together/models/zai-org__GLM-5.1.yaml
       - providers/together/models/zai-org__GLM-5.2.yaml
 
+  - name: typesafe
+    files:
+      - providers/typesafe/provider.yaml
+    models:
+      - providers/typesafe/models/jev-1.13.0.yaml
+
   - name: vertex-ai
     files:
       - providers/vertex-ai/provider.yaml
@@ -817,7 +837,7 @@ providers:
 
 # Statistics
 stats:
-  total_providers: 24
-  total_models: 639
-  static_providers: 17
+  total_providers: 27
+  total_models: 644
+  static_providers: 20
   meta_providers: 7

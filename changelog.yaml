@@ -1,4 +1,14 @@
 versions:
+  - version: "2.10.0"
+    date: "2026-09-29"
+    description: "Add TypeSafe Jev, self-hosted Kev and Laya decision services with System One integrations. Context limits for self-hosted services reflect defaults where documented. No release dates are inferred from repository activity."
+    changes:
+      new_models:
+        - { provider: typesafe, model: "jev-1.13.0", display_name: "Jev 1.13" }
+        - { provider: kev, model: "kev-latest", display_name: "Kev (configured checkpoint)" }
+        - { provider: laya, model: "english", display_name: "Laya English" }
+        - { provider: laya, model: "multilingual", display_name: "Laya Multilingual" }
+        - { provider: laya, model: "typed-decisions", display_name: "Laya Typed Decisions" }
   - version: "2.9.0"
     date: "2026-09-29"
     description: "September 1-29 refresh: verified direct API releases plus new named OpenRouter offerings across the wider model ecosystem. Preserves provider-specific prices and context/output limits; updates retired DeepSeek Flash aliases. OpenRouter dates indicate route listing, not necessarily original model launch. See research/2026-09-29.md for sources, coverage, and exclusions."
