@@ -1,11 +1,11 @@
 # Verified 2026-09-29.
 # Source: https://api-docs.deepseek.com/updates/
 # Source: https://api-docs.deepseek.com/quick_start/pricing
-name: "deepseek-v4-flash-vision-exp"
-display_name: "DeepSeek V4 Flash Vision Exp"
+name: "deepseek-flash"
+display_name: "DeepSeek V4.1 Flash"
 family: "deepseek-flash"
-status: "deprecated"
-release_date: "2026-08-21"
+status: "stable"
+release_date: "2026-09-10"
 cost:
   input_per_1k: 0.0003
   output_per_1k: 0.0012
@@ -24,7 +24,7 @@ modalities:
     - "image"
   output:
     - "text"
-notes: "Retired checkpoint. Temporary compatibility alias served and billed as DeepSeek V4.1 Flash; migrate to deepseek-flash. Peak rates. Off-peak rates are 50% lower. Peak UTC hours: 01:00-04:00 and 06:00-10:00 on weekdays excluding Chinese public holidays. Native multimodal V4.1 Flash; use deepseek-flash as the API ID."
+notes: "Peak rates. Off-peak rates are 50% lower. Peak UTC hours: 01:00-04:00 and 06:00-10:00 on weekdays excluding Chinese public holidays. Native multimodal V4.1 Flash; use deepseek-flash as the API ID."
 parameters:
   -
     key: "max_output_tokens"
@@ -46,3 +46,4 @@ parameters:
     has_min_value: true
     max_value: 1
     has_max_value: true
+added_in_version: "2.9.0"

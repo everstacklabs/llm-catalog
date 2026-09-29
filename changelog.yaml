@@ -1,4 +1,58 @@
 versions:
+  - version: "2.9.0"
+    date: "2026-09-29"
+    description: "September 1-29 refresh: verified direct API releases plus new named OpenRouter offerings across the wider model ecosystem. Preserves provider-specific prices and context/output limits; updates retired DeepSeek Flash aliases. OpenRouter dates indicate route listing, not necessarily original model launch. See research/2026-09-29.md for sources, coverage, and exclusions."
+    changes:
+      new_models:
+        - { provider: anthropic, model: "claude-opus-5-5", display_name: "Claude Opus 5.5" }
+        - { provider: anthropic, model: "claude-sonnet-5-5", display_name: "Claude Sonnet 5.5" }
+        - { provider: deepseek, model: "deepseek-flash", display_name: "DeepSeek V4.1 Flash" }
+        - { provider: google, model: "gemini-3.8-flash", display_name: "Gemini 3.8 Flash" }
+        - { provider: openai, model: "gpt-6-luna", display_name: "GPT-6 Luna" }
+        - { provider: openai, model: "gpt-6-sol", display_name: "GPT-6 Sol" }
+        - { provider: openrouter, model: "aion-labs/aion-3.5", display_name: "AionLabs: Aion 3.5 (OpenRouter)" }
+        - { provider: openrouter, model: "aion-labs/aion-3.5-mini", display_name: "AionLabs: Aion 3.5 Mini (OpenRouter)" }
+        - { provider: openrouter, model: "anthropic/claude-fable-5.1", display_name: "Anthropic: Claude Fable 5.1 (OpenRouter)" }
+        - { provider: openrouter, model: "anthropic/claude-opus-5.5", display_name: "Anthropic: Claude Opus 5.5 (OpenRouter)" }
+        - { provider: openrouter, model: "anthropic/claude-sonnet-5.5", display_name: "Anthropic: Claude Sonnet 5.5 (OpenRouter)" }
+        - { provider: openrouter, model: "cohere/command-a-plus", display_name: "Cohere: Command A+ (OpenRouter)" }
+        - { provider: openrouter, model: "deepseek/deepseek-v4.1-flash", display_name: "DeepSeek: DeepSeek V4.1 Flash (OpenRouter)" }
+        - { provider: openrouter, model: "fireworks/ember-1", display_name: "Fireworks: Ember-1 (OpenRouter)" }
+        - { provider: openrouter, model: "google/gemini-3.8-flash", display_name: "Google: Gemini 3.8 Flash (OpenRouter)" }
+        - { provider: openrouter, model: "inception/mercury-2.5", display_name: "Inception: Mercury 2.5 (OpenRouter)" }
+        - { provider: openrouter, model: "inclusionai/ling-3.0-flash-sante:free", display_name: "inclusionAI: Ling 3.0 Flash Sante (free) (OpenRouter)" }
+        - { provider: openrouter, model: "inclusionai/ling-3.0-flash-vl", display_name: "inclusionAI: Ling 3.0 Flash VL (OpenRouter)" }
+        - { provider: openrouter, model: "inference-net/schematron-v2-small", display_name: "Inference.net: Schematron V2 Small (OpenRouter)" }
+        - { provider: openrouter, model: "inference-net/schematron-v2-turbo", display_name: "Inference.net: Schematron V2 Turbo (OpenRouter)" }
+        - { provider: openrouter, model: "meta/muse-spark-1.3", display_name: "Meta: Muse Spark 1.3 (OpenRouter)" }
+        - { provider: openrouter, model: "nex-agi/nex-n2.5-mini", display_name: "Nex AGI: Nex-N2.5-Mini (OpenRouter)" }
+        - { provider: openrouter, model: "nex-agi/nex-n2.5-pro", display_name: "Nex AGI: Nex-N2.5-Pro (OpenRouter)" }
+        - { provider: openrouter, model: "openai/gpt-6-astra", display_name: "OpenAI: GPT-6 Astra (OpenRouter)" }
+        - { provider: openrouter, model: "openai/gpt-6-astra-pro", display_name: "OpenAI: GPT-6 Astra Pro (OpenRouter)" }
+        - { provider: openrouter, model: "openai/gpt-6-luna", display_name: "OpenAI: GPT-6 Luna (OpenRouter)" }
+        - { provider: openrouter, model: "openai/gpt-6-luna-pro", display_name: "OpenAI: GPT-6 Luna Pro (OpenRouter)" }
+        - { provider: openrouter, model: "openai/gpt-6-sol", display_name: "OpenAI: GPT-6 Sol (OpenRouter)" }
+        - { provider: openrouter, model: "openai/gpt-6-sol-pro", display_name: "OpenAI: GPT-6 Sol Pro (OpenRouter)" }
+        - { provider: openrouter, model: "perceptron/perceptron-mk1.5", display_name: "Perceptron: Perceptron Mk1.5 (OpenRouter)" }
+        - { provider: openrouter, model: "prism-ml/ternary-bonsai-2-27b", display_name: "PrismML: Ternary Bonsai 2 27B (OpenRouter)" }
+        - { provider: openrouter, model: "qwen/qwen3.8-max-0902", display_name: "Qwen: Qwen3.8 Max (0902) (OpenRouter)" }
+        - { provider: openrouter, model: "qwen/qwen3.8-max-prime", display_name: "Qwen: Qwen3.8 Max Prime (OpenRouter)" }
+        - { provider: openrouter, model: "qwen/qwen3.8-omni-flash", display_name: "Qwen: Qwen3.8 Omni Flash (OpenRouter)" }
+        - { provider: openrouter, model: "sakana/fugu-max", display_name: "Sakana: Fugu Max (OpenRouter)" }
+        - { provider: openrouter, model: "sakana/fugu-ultra-v2", display_name: "Sakana: Fugu Ultra v2 (OpenRouter)" }
+        - { provider: openrouter, model: "unbiased/pareto", display_name: "Pareto (OpenRouter)" }
+        - { provider: openrouter, model: "upstage/solar-mini4", display_name: "Upstage: Solar Mini 4 (OpenRouter)" }
+        - { provider: openrouter, model: "x-ai/grok-4.7", display_name: "SpaceXAI: Grok 4.7 (OpenRouter)" }
+        - { provider: openrouter, model: "xiaomi/mimo-v2.6-flash", display_name: "Xiaomi: MiMo-V2.6-Flash (OpenRouter)" }
+        - { provider: openrouter, model: "xiaomi/mimo-v2.6-pro", display_name: "Xiaomi: MiMo-V2.6-Pro (OpenRouter)" }
+        - { provider: openrouter, model: "xiaomi/mimo-v2.6-pro-ultraspeed", display_name: "Xiaomi: MiMo-V2.6-Pro-UltraSpeed (OpenRouter)" }
+        - { provider: openrouter, model: "z-ai/glm-5.3-flashx", display_name: "Z.ai: GLM 5.3 FlashX (OpenRouter)" }
+        - { provider: openrouter, model: "z-ai/glm-5.3-prime", display_name: "Z.ai: GLM 5.3 Prime (OpenRouter)" }
+        - { provider: xai, model: "grok-4.7", display_name: "Grok 4.7" }
+      deprecated_models:
+        - { provider: deepseek, model: "deepseek-v4-flash", description: "Retired checkpoint; temporary alias routes to deepseek-flash (V4.1 Flash)." }
+        - { provider: deepseek, model: "deepseek-v4-flash-vision-exp", description: "Retired checkpoint; temporary alias routes to deepseek-flash (V4.1 Flash)." }
+
   - version: "2.8.0"
     date: "2026-09-03"
     description: "Adds GPT-6 Astra and Claude Fable 5.1 from their first-party API documentation, including their complete low, medium, high, xhigh, and max reasoning-effort variants. GPT-6 Astra includes its 1.05M-token context, 128K output limit, Responses API guidance, structured output support, cache pricing, and the price multipliers above 272K input tokens. Claude Fable 5.1 includes its 1M-token context, 128K output limit, adaptive-thinking controls, reduced cache-read price, and both 5-minute and 1-hour cache-write rates. This release also corrects Claude Fable 5's first-party release date from June 7 to June 9, 2026, and refreshes the provider UI with OpenRouter's current official glyph."
